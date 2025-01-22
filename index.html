@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Polaris </title>
+    <link rel="shortcut icon" href="icon/favicon.ico" type="image/x-icon">
+
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/nav.css"> 
+    <!-- <link rel="stylesheet" href="./css/questions.css">   -->
+    <!-- <link rel="stylesheet" href="./css/mobil.css">   -->
+    <link rel="stylesheet" href="./css/home.css">
+    <!-- <link rel="stylesheet" href="./css/about.css"> -->
+    <!-- <link rel="stylesheet" href="./css/admissions.css"> -->
+    <!-- <link rel="stylesheet" href="./css/blog.css"> -->
+    <!-- <link rel="stylesheet" href="./css/contact.css"> -->
+    <!-- <link rel="stylesheet" href="./css/editor.css"> -->
+    <link rel="stylesheet" href="./css/footer.css">   
+
+    <!-- Including jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>   
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<!-- Custom JavaScript -->
+    <script src="./js/languages.js"></script>
+    <script src="./js/editor.js"></script>    
+    <style>
+        .section_container {
+            max-width: 1400px !important;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+<header class="main-header">    
+    <a class="logo" href="./index.html"><img src="./icon/logo.png" alt="Logotipo Polaris"></a>
+    <i class="menu-toggle fas fa-bars"></i>  
+    <nav class="nav-ul nav-desktop">
+        <ul class="nav-links">            
+            <li><a href="./about.html">Acerca de</a></li>
+            <li><a href="./admissions.html">Admisiones</a></li>
+            <li><a href="./blog.html">Blog</a></li>
+            <li><a href="./contact.html">Contacto</a></li>           
+        </ul>
+    </nav> 
+</header>
+<nav class="nav-ul nav-mobile">
+    <ul class="nav-links">            
+        <li><a href="./about.html">Acerca de</a></li>
+        <li><a href="./admissions.html">Admisiones</a></li>
+        <li><a href="./blog.html">Blog</a></li>
+        <li><a href="./contact.html">Contacto</a></li>           
+    </ul>
+</nav>
+
+<script>
+    $('.fa-bars').click(function(){
+        $('.nav-mobile').slideToggle(500);
+    });
+    //document.querySelector('.menu-toggle').addEventListener('click', function() {
+      //  document.querySelector('.nav-links').classList.toggle('active');
+    //});
+</script>
+<main>
+<section class="banner">
+    <div class="section-container">
+        <div class="banner-content">                   
+            <div class="item">
+                <h1>Potencia tu equipo al siguiente nivel</h1>
+                <h3>En Polaris ofrecemos cursos bonificables diseñados a medida para satisfacer las necesidades específicas de tu organización.</h3>                
+                <a class="btn btn1">Solicita información</a> 
+                <a class="btn btn2">Sobre la bonificación</a>
+            </div>
+        </div>
+        <!-- <div class="hola">Hola</div> -->
+        <div class="students-container">
+            <div class="students-item">
+                <i class="fas fa-medal"></i>
+                <div class="students-content">
+                    <h4>Personalización total</h4>          
+                    <p>Diseñamos cursos exclusivos para el sector, tamaño y desafíos específicos de tu empresa.</p>
+                </div>            
+            </div>
+            <div class="students-item">
+                <i class="fas fa-graduation-cap"></i>
+                <div class="students-content">
+                    <h4>Formadores expertos</h4>          
+                    <p>Contamos con profesionales altamente cualificados y con experiencia en la industria.</p>
+                </div>            
+            </div>
+        </div>
+    </div>
+</section> 
+
+<section class="students">     
+    <div class="text-medio">         
+        <div class="item image-container">        
+            <img class="students-image" src="./imgs/meet01.jpg">          
+        </div>
+                   
+            <div class="text-medio-content">
+                <h3>Dale a tu equipo las herramientas para seguir sus sueños</h3>
+                <p>Empoderamos a tu equipo para alcanzar su máximo potencial mediante formación de calidad, diseñada para transformar habilidades en logros. Ofrecemos herramientas prácticas, conocimientos especializados y apoyo constante, preparando a tu personal para enfrentar los desafíos empresariales con confianza, creatividad y habilidades únicas.</p>
+                <a class="btn btn2">Learn More</a>
+            </div>      
+        
+        
+        
+    </div>   
+</section>
+<section class="cursos">  
+    <div class="section-container cursos-container"> 
+        <header class="cursos-header">
+            <h2>Nuestros cursos</h2>
+            <p>Impartimos la formación en tus instalaciones o en modalidad virtual, ajustándonos a tus horarios y necesidades.</p>
+        </header>        
+        <div class="cursos-flex">
+            <div class="curso">
+                <img src="./imgs/excel01.webp" alt="Curso de Excel">
+                <div class="curso-content">
+                    <h3>Curso Excel</h3>
+                    <p>Impartimos cursos de Excel en todos los niveles. Aprende desde las funciones esenciales hasta técnicas avanzadas, adaptándonos a tus necesidades profesionales específicas.</p>
+                </div>               
+            </div>
+            <div class="curso">
+                <img src="./imgs/ia.webp" alt="">
+                <div class="curso-content">
+                    <h3>IA</h3>
+                    <p>Impulsa tu empresa con inteligencia artificial: capacita a tu equipo en tecnologías clave para optimizar procesos y liderar la innovación.</p>
+                </div>               
+            </div>
+            <div class="curso">
+                <img src="./userData/es/image/photos/67364283eab3d.jpg" alt="">
+                <div class="curso-content">
+                    <h3>Curso Básico de Microsoft Word</h3>
+                    <p>Aprende a crear, editar utilizando funciones avanzadas como tablas, gráficos e imágenes.</p>
+                </div>               
+            </div>
+            <div class="curso">
+                <img src="./userData/es/image/photos/67364283eab3d.jpg" alt="">
+                <div class="curso-content">
+                    <h3>Curso Básico de Microsoft Word</h3>
+                    <p>Aprende a crear, editar utilizando funciones avanzadas como tablas, gráficos e imágenes.</p>
+                </div>               
+            </div>
+            <div class="curso">
+                <img src="./userData/es/image/photos/67364283eab3d.jpg" alt="">
+                <div class="curso-content">
+                    <h3>Curso Básico de Microsoft Word</h3>
+                    <p>Aprende a crear, editar utilizando funciones avanzadas como tablas, gráficos e imágenes.</p>
+                </div>               
+            </div>
+            <div class="curso">
+                <img src="./userData/es/image/photos/67364283eab3d.jpg" alt="">
+                <div class="curso-content">
+                    <h3 style="font-size:20px;">Curso Básico de Microsoft Word</h3>
+                    <p>Aprende a crear, editar utilizando funciones avanzadas como tablas, gráficos e imágenes.</p>
+                </div>               
+            </div>            
+        </div> <!-- Cursos Flex  -->
+        <a class="btn btn2">View ALl Programs</a>  
+    </div>      
+</section>    
+<section class="mission">
+    <div class="section-container mission-container">
+        <header class="mission-header">
+            <h2>Formación de alta calidad</h2>
+            <p>Nuestra misión es proporcionar formación de alta calidad que potencie las habilidades de tus equipos, optimice sus competencias y fortalezca su desempeño. Ya sea que busques mejorar habilidades técnicas, competencias de liderazgo o fomentar una cultura de innovación, en Polaris creamos soluciones formativas adaptadas a tus objetivos.</p>
+        </header>                   
+        <div class="mission-flex">
+            <div class="mission-card">
+                <i class="fas fa-trophy"></i>
+                <div  class="mission-card-item">
+                    <h3>Misión de polaris</h3>
+                    <p>Nuestra misión es ofrecer formación de calidad que prepare a tu equipo con habilidades prácticas para enfrentar los desafíos profesionales y contribuir al éxito de tu empresa.</p>
+                </div>
+            </div>                 
+            <div class="mission-card">
+                <i class="fas fa-trophy"></i>
+                <div  class="mission-card-item">
+                    <h3>Misión de polaris</h3>
+                    <p>Nuestra misión es ofrecer formación de calidad que prepare a tu equipo con habilidades prácticas para enfrentar los desafíos profesionales y contribuir al éxito de tu empresa.</p>
+                </div>
+            </div>    
+        </div> <!-- Mission flex-->
+        <img src="./userData/es/image/photos/6736426838f16.png" class="adorno" alt="">
+</section> <!-- Mission -->
+</main>
+<footer class="footer">
+  <div class="section-container footer-container">
+    <div class="footer-column">
+      <img src="./icon/polaris_logo_blanco.png" alt="Logotipo Polaris de color blanco" class="logo-blanco">
+      <h4 class="footer-title">Universidad Divi</h4>
+      <p class="footer-text">Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet.</p>
+      <div class="footer-contact">
+        <p>1234 Divi St. #1000, San Francisco, CA 94220</p>
+        <p><a href="mailto:hello@divionlineuniversity.com">hello@divionlineuniversity.com</a></p>
+        <p><a href="tel:+12553526258">(255) 352-6258</a></p>
+      </div>
+      <div class="social">
+        <a href="https://www.facebook.com" target="_blank" class="fab fa-facebook-f">
+            
+        </a>
+        <a href="https://x.com" target="_blank" class="fab fa-x">
+            
+        </a>
+        <a href="https://www.instagram.com" target="_blank" class="fab fa-instagram">
+            
+        </a>
+      </div>
+    </div>
+
+    <div class="footer-column">
+        <h4 class="footer-title">Explore</h4>
+        <p><a href="#">Estudia con nosotros</a></p>
+        <p><a href="#">Aprendizaje a distancia soportado</a></p>
+        <p><a href="#">Financiación de tus estudios</a></p>
+        <p><a href="#">Reputación global</a></p>
+        <p><a href="#">Aprendizajes</a></p>
+        <p><a href="#">Noticias y medios</a></p>
+      
+        
+        <p><a href="#">Estudiante / Tutor</a></p>
+        <p><a href="#">Personal</a></p>
+        <p><a href="#">Sistema de entrada de calificaciones en línea</a></p>
+        <p><a href="#">Carreras</a></p>
+    </div>
+
+    <div class="footer-column">
+        <h4 class="footer-title">Admission</h4>
+        <p class="footer-section-title">Admisión local</p>
+        <p><a href="#">Admisión local</a></p>
+        <p><a href="#">Admisión internacional</a></p>
+        <p><a href="#">Detalles de admisión</a></p>
+        <p class="footer-section-title">Declaración de accesibilidad</p>
+        <p><a href="#">Declaración de accesibilidad</a></p>
+        <p><a href="#">Condiciones de uso</a></p>
+        <p><a href="#">Política de privacidad</a></p>
+        <p><a href="#">Política de cookies</a></p>
+        <p><a href="#">Derechos de autor</a></p>
+    </div>
+  </div>  
+</footer>    
+</body>
+</html>

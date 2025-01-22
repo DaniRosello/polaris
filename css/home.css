@@ -1,0 +1,296 @@
+:root {
+    --color-light-gray: #eeeeee;
+    --color-dark-gray: #2a2f31;
+    --color-white: #ffffff;
+    --color-blue-gray: #b1ccdd;
+    --color-black: black;
+    --color-gray: #333333;
+    --color-light-blue-gray: #9c9e9c;
+    --color-icon-bg: #b1ccdd;
+    --color-border: #E0E0E0;
+    --color-dark-blue: #8086a3;
+    --color-logo-navy: #113159;
+    --color-logo-sky: #87b5d6;
+}
+
+body {
+    font-family: "Open Sans", Arial, sans-serif;
+    letter-spacing: normal;
+    background-color: var(--color-light-gray);
+    ;
+}
+
+.banner {
+   
+    color: var(--color-white);
+    background-image: linear-gradient(#0005,#0005),url("../imgs/meet04.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;    
+    position: relative;
+    text-align: start;  
+
+
+}
+
+/* .banner::before {
+    content: "";
+    background: linear-gradient(to right, rgba(42, 47, 49, 1), rgba(42, 47, 49, 0.7));
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+} */
+
+.banner-content {
+    position: relative;
+    z-index: 2;
+    max-width: 750px;
+    padding: 50px 20px;
+    
+}
+
+
+.banner-content h1 {
+    font-size: 1.5rem;
+    color: var(--color-white);
+    text-align: left;
+    /* text-shadow: 0 0 3px black; */
+    
+}
+
+.banner-content h3 {
+    font-size: 30px;
+    /* margin-left: 160px; */
+    margin-top: 20px;
+    font-size: 1rem;
+    font-weight: 400;    
+}
+
+/*---------------SECCION ESTUDIANTES ------------------------------*/
+section.students {
+    background-color: var(--color-dark-gray);
+    padding: 0 30px;
+}
+.students-container {
+    background-color: var(--color-dark-gray);
+    padding: 20px;
+}
+.students-item {
+    padding: 20px;
+    border-radius: 30px 0 0 0;
+    display: flex;
+    gap: 16px;
+}
+
+
+.students-item:first-of-type {
+    background-color: var(--color-blue-gray);
+    color: var(--color-gray)
+
+}
+.students-item:last-of-type {
+    color: var(--color-light-gray);
+    background-color: var(--color-dark-gray);
+
+}
+.students-item i {
+    font-size: 2rem;
+}
+.students-item h4 {
+    margin-bottom: 20px;
+}
+
+.students-image {
+    width: 100%;
+    border-radius: 0 0 30px 0;
+}
+.text-medio-content {
+    background-color: var(--color-white);
+    margin-top: 20px;
+    padding: 30px;
+    border-radius: 0 30px 0 0;
+    color: var(--color-gray);
+}
+.text-medio-content h3 {
+    margin-bottom: 20px;
+}
+
+@media (min-width: 980px) {
+    .banner-content {
+        padding: 150px 50px;
+    }
+    .banner-content h1 {
+        font-size: 4rem;    
+        
+    }
+    section.students {
+        padding: 0;
+        
+        
+    }
+    .text-medio {
+        display: flex;
+        
+
+
+    }
+    .text-medio > *{
+        flex: 1 1 50%;
+    }
+    .text-medio-content {
+        border-radius: 0;
+        
+    }
+    .text-medio-content h3 {
+        font-size: 2rem;
+        
+    }
+    .text-medio-content > * {
+        max-width: 550px;
+    }
+    
+    .students-container {
+        background-color: initial;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        display: flex;
+        justify-content: flex-end;
+        padding: initial;
+        
+    }
+    .students-container > * {
+        flex: 0 0 25%;
+    }
+    .students-item:last-of-type {
+        border-radius: 0;
+    }
+    .text-medio-flex {
+        display: flex;
+        justify-content: flex-start;
+    }
+    .text-medio-flex >  * {
+        flex: 0 0 300px;
+    }
+    div.text-medio-content {
+        margin: 0;
+    }
+
+    
+
+}
+
+/* SECCION CURSOS*/
+
+section.cursos {
+    background-color: var(--color-light-gray);
+    color: var(--color-gray);
+    padding: 30px;
+}
+.cursos-header {
+    text-align: center;
+    padding: 80px 0;
+    
+}
+.cursos-header h2 {
+    margin-bottom: 40px;
+}
+.curso {
+    border-radius: 30px;
+    border: 1px solid var(--color-dark-gray);
+    margin-bottom: 30px;
+    background-color: var(--color-white);
+}
+.curso img {
+    width: 100%;
+    border-radius: 30px 30px 0 0;
+}
+.curso-content {
+    padding: 20px;
+}
+.curso-content h3 {
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+@media (min-width: 980px) {
+    .cursos-flex {
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+    .cursos-flex > * {
+        flex: 1 1 300px;
+    }
+    .cursos-header h2 {
+        font-size: 3rem;
+    }
+}
+
+
+/* MISSION */
+section.mission {
+    padding: 30px;
+    background-color: var(--color-white);   
+    color: var(--color-gray);
+    background-repeat: no-repeat;
+    background-position: 0 600px, 0;
+
+}
+
+.mission-header h2 {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+}
+
+.mission-card {
+    border: 1px solid var(--color-gray);
+    border-radius: 30px;
+    padding: 20px;
+    margin: 20px 0;
+}
+.mission-card h3 {
+    margin: 20px 0;
+}
+.mission-card .fas {
+    font-size: 2rem;
+    background-color: var(--color-gray);    
+    color: var(--color-blue-gray);
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mission-card:first-of-type {
+    background-color: var(--color-gray);
+    color: var(--color-light-gray);
+}
+.mission-card:first-of-type i {
+    background-color: var(--color-blue-gray);
+    color: var(--color-gray);
+}
+
+img.adorno {
+    display: none;
+}
+@media (min-width: 980px) {
+    section.mission {
+        padding: 100px;
+       
+    }
+    .mission-header h2 {
+        font-size: 2.5rem;
+        margin-bottom: 30px;
+    }
+    .mission-header p:last-of-type {
+        margin-bottom: 30px;
+    }
+    .mission-flex {
+        display: flex;
+        gap: 30px;
+    }
+}
