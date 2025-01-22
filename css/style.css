@@ -1,6 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap');
 * {
     margin: 0;
     padding: 0;
+    
+}
+*::after, *::before {
     box-sizing: border-box;
 }
 :root {
@@ -18,6 +22,28 @@
     --color-logo-sky: #87b5d6;
 }
 
+/*  ********************************* * *  * * * * * * * * *  *********************************************** */
+/*  *********************************     ESTILOS GENERALES   *********************************************** */
+/*  ********************************* * *  * * * * * * * * *  *********************************************** */
+
+body {
+    font-family: "Open Sans", Arial, sans-serif;
+    letter-spacing: normal;
+    background-color: var(--color-light-gray);
+    ;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Playfair", serif;
+    font-optical-sizing: auto;
+}
+h1 {
+    font-size: 4rem;
+}
 /* BOTONES */
 a.btn {
     display: block;
@@ -30,6 +56,7 @@ a.btn {
     position: relative;
     cursor: pointer;
     margin: 30px 0;
+    text-decoration: none;
 }
 a.btn:after {
     content: ">";
@@ -53,7 +80,7 @@ a.btn2 {
     background-color: var(--color-dark-gray);
 }
 
-/*  */
+
 
 p {
     line-height: 1.5rem;
@@ -65,4 +92,228 @@ p {
     position: relative;
     max-width: 1200px;
     margin: auto;
+}
+
+
+
+/*  ********************************* * *  * * * * * * * * *  *********************************************** */
+/*  ********************************* * *  * HEADER NAV  * *  *********************************************** */
+/*  ********************************* * *  * * * * * * * * *  *********************************************** */
+
+header.main-header {
+    background-color: var(--color-white);
+    height: 80px;
+    padding: 0 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    
+}
+header.main-header > * {
+    display: block;
+}
+a.logo > img {
+    height: 50px;
+    
+}
+i.fa-bars {
+    font-size: 24px;
+    color: var(--color-logo-sky);
+    cursor: pointer;
+    
+}
+i.fa-bars:hover {    
+    color: var(--color-logo-navy);
+    transition: .5s;    
+}
+nav.nav-desktop {
+    display: none;
+}
+nav.nav-mobile {
+    background-color: var(--color-white);
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 80px;
+    padding: 24px;
+    z-index: 100;
+    display: none;
+}
+nav.nav-mobile li {
+    list-style: none;    
+    border-bottom: 1px solid var(--color-light-gray);
+}
+nav.nav-mobile li:hover {
+    background-color: var(--color-light-gray);
+    transition: .5s;
+}
+nav.nav-mobile a {
+    color: var(--color-logo-navy);
+    text-decoration: none;
+    display: block;
+    padding: 14px;
+}
+
+@media (min-width: 980px) {
+    i.fa-bars {
+        display: none;
+    }
+    .nav-mobile {
+        display: none !important;
+    }
+    nav.nav-desktop {
+        display: block;
+    }
+    nav.nav-desktop ul {
+        display: flex;
+    }
+    nav.nav-desktop li {
+        list-style: none;
+        margin-left: 20px
+    }
+
+    nav.nav-desktop a {
+        text-decoration: none;
+        color: var(--color-gray)
+    }
+    nav.nav-desktop a:hover {
+        color: var(--color-logo-navy);
+
+    }
+
+
+
+    
+}
+
+
+/*FORM*/
+
+/* Form Section */
+.formContact {
+    background: #b1ccdd;
+    padding: 100px;
+    border-radius: 30px;
+    max-width: 1000px;
+    width: 90%;
+    margin: 20px auto;
+    position: relative;
+}
+
+.form-container:hover {
+    transform: scale(1.02);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+.form-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.form-group input {
+    flex: 1;
+    padding: 15px;
+    border: 1px solid black;
+    border-radius: 10px;
+    font-size: 1rem;
+    background: #b1ccdd;
+}
+
+.textareaContact {
+    width: 100%;
+    height: 160px;
+    padding: 15px;
+    border: 1px solid black;
+    border-radius: 10px;
+    font-size: 1rem;
+    background: #b1ccdd;
+}
+
+.btnContact {
+    width: 150px;
+    padding: 20px;
+    background: black;
+    color: white;
+    border: none;
+    border-radius: 40px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    position: absolute;
+    right: 50px;
+    bottom: 0;
+    margin-bottom: 20px;
+}
+
+.cardsContact {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    padding: 20px;
+    margin: 30px 80px;
+}
+
+.card {
+    flex: 1;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.card h3 {
+    margin: 0 0 10px;
+    font-size: 1.2em;
+}
+
+.card p {
+    margin: 5px 0;
+}
+@media (max-width: 992px) {
+    .imgCorner {
+        width: 270px;
+        height: auto;
+    }
+    
+    .containerContact h2 {
+        font-size: 2rem;
+        padding-top: 80px;
+    }
+
+    .containerContact p {
+        font-size: 0.9rem;
+        max-width: 90%;
+    }
+
+    .form-group {
+        display: initial;
+        
+    }
+    .formContact {
+        background: #b1ccdd;
+        padding: 50px;
+        border-radius: 30px;
+        max-width: 350px;
+        /* width: 90%; */
+        margin: 20px auto;
+        position: relative;
+    }
+
+    .form-group input,
+    .textareaContact {
+        width: 100%;
+        margin: 20px;
+        margin-left: 0;
+    }
+
+    .btnContact {
+        font-size: 1rem;
+        padding: 10px;
+        margin-right: 200px;
+    } 
+    .cardsContact {
+        display: initial;
+       
+    }
+   
 }

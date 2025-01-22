@@ -10,16 +10,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/nav.css"> 
-    <!-- <link rel="stylesheet" href="./css/questions.css">   -->
-    <!-- <link rel="stylesheet" href="./css/mobil.css">   -->
-    <link rel="stylesheet" href="./css/home.css">
-    <!-- <link rel="stylesheet" href="./css/about.css"> -->
-    <!-- <link rel="stylesheet" href="./css/admissions.css"> -->
-    <!-- <link rel="stylesheet" href="./css/blog.css"> -->
-    <!-- <link rel="stylesheet" href="./css/contact.css"> -->
-    <!-- <link rel="stylesheet" href="./css/editor.css"> -->
+    <link rel="stylesheet" href="./css/style.css">    
+    <link rel="stylesheet" href="./css/home.css">    
     <link rel="stylesheet" href="./css/footer.css">   
 
     <!-- Including jQuery -->
@@ -31,6 +23,9 @@
     <script src="./js/languages.js"></script>
     <script src="./js/editor.js"></script>    
     <style>
+        .main-header {
+
+        }
         .section_container {
             max-width: 1400px !important;
             margin: auto;
@@ -38,44 +33,43 @@
     </style>
 </head>
 <body>
-<header class="main-header">    
+<header class="main-header"> 
     <a class="logo" href="./index.html"><img src="./icon/logo.png" alt="Logotipo Polaris"></a>
     <i class="menu-toggle fas fa-bars"></i>  
     <nav class="nav-ul nav-desktop">
         <ul class="nav-links">            
-            <li><a href="./about.html">Acerca de</a></li>
-            <li><a href="./admissions.html">Admisiones</a></li>
-            <li><a href="./blog.html">Blog</a></li>
-            <li><a href="./contact.html">Contacto</a></li>           
+            <li><a href="./about.html">Sobre nosotros</a></li>
+            <li><a href="./admissions.html">Formación a medida</a></li>
+            <li><a href="./blog.html">Cursos</a></li>
+            <li><a href="./contact.html">Bonicación</a></li>
+            <li><a href="./contact.html">Contacto</a></li>            
         </ul>
-    </nav> 
+    </nav>    
 </header>
 <nav class="nav-ul nav-mobile">
     <ul class="nav-links">            
-        <li><a href="./about.html">Acerca de</a></li>
-        <li><a href="./admissions.html">Admisiones</a></li>
-        <li><a href="./blog.html">Blog</a></li>
-        <li><a href="./contact.html">Contacto</a></li>           
+        <li><a href="./about.html">Sobre nosotros</a></li>
+        <li><a href="./admissions.html">Formación a medida</a></li>
+        <li><a href="./blog.html">Cursos</a></li>
+        <li><a href="./contact.html">Bonicación</a></li>     
+        <li><a href="./contact.html">Contacto</a></li>       
     </ul>
 </nav>
 
 <script>
     $('.fa-bars').click(function(){
         $('.nav-mobile').slideToggle(500);
-    });
-    //document.querySelector('.menu-toggle').addEventListener('click', function() {
-      //  document.querySelector('.nav-links').classList.toggle('active');
-    //});
+    });   
 </script>
 <main>
 <section class="banner">
     <div class="section-container">
         <div class="banner-content">                   
             <div class="item">
-                <h1>Potencia tu equipo al siguiente nivel</h1>
-                <h3>En Polaris ofrecemos cursos bonificables diseñados a medida para satisfacer las necesidades específicas de tu organización.</h3>                
-                <a class="btn btn1">Solicita información</a> 
-                <a class="btn btn2">Sobre la bonificación</a>
+                <h1>Expertos en formación para empresas</h1>
+                <h3>En Polaris ofrecemos cursos a medida, diseñados para maximizar el rendimiento de tu equipo adaptándonos a tus necesidades.</h3>                
+                <a class="btn btn1" href="cursos.html">Nuestros cursos</a> 
+                <a class="btn btn2" href="contact.html">Solicita información</a>
             </div>
         </div>
         <!-- <div class="hola">Hola</div> -->
@@ -83,15 +77,15 @@
             <div class="students-item">
                 <i class="fas fa-medal"></i>
                 <div class="students-content">
-                    <h4>Personalización total</h4>          
-                    <p>Diseñamos cursos exclusivos para el sector, tamaño y desafíos específicos de tu empresa.</p>
+                    <h4>Cursos a medida</h4>          
+                    <p>Diseñamos programas específicos para el sector, tamaño y necesidades de tu equipo, garantizando resultados efectivos.</p>
                 </div>            
             </div>
             <div class="students-item">
                 <i class="fas fa-graduation-cap"></i>
                 <div class="students-content">
                     <h4>Formadores expertos</h4>          
-                    <p>Contamos con profesionales altamente cualificados y con experiencia en la industria.</p>
+                    <p>Contamos con formadores están especializados en capacitar al personal con metodologías prácticas y actualizadas.</p>
                 </div>            
             </div>
         </div>
@@ -101,13 +95,13 @@
 <section class="students">     
     <div class="text-medio">         
         <div class="item image-container">        
-            <img class="students-image" src="./imgs/meet01.jpg">          
+            <img class="students-image" src="./img/meet01.jpg">          
         </div>
                    
             <div class="text-medio-content">
-                <h3>Dale a tu equipo las herramientas para seguir sus sueños</h3>
-                <p>Empoderamos a tu equipo para alcanzar su máximo potencial mediante formación de calidad, diseñada para transformar habilidades en logros. Ofrecemos herramientas prácticas, conocimientos especializados y apoyo constante, preparando a tu personal para enfrentar los desafíos empresariales con confianza, creatividad y habilidades únicas.</p>
-                <a class="btn btn2">Learn More</a>
+                <h3>Calidad y eficiencia garantizadas</h3>
+                <p>Con Polaris, tu equipo se beneficiará de una formación práctica, impartida por expertos, y enfocada en resolver los desafíos reales de tu empresa. La excelencia es nuestra prioridad.</p>
+                <a class="btn btn2" href="contact.html">Solicita información</a>
             </div>      
         
         
@@ -117,79 +111,76 @@
 <section class="cursos">  
     <div class="section-container cursos-container"> 
         <header class="cursos-header">
-            <h2>Nuestros cursos</h2>
-            <p>Impartimos la formación en tus instalaciones o en modalidad virtual, ajustándonos a tus horarios y necesidades.</p>
+            <h2>Nuestros cursos destacados</h2>
+            <p>Explora nuestras formaciones más demandadas. Cada curso es totalmente personalizable, asegurando una experiencia de aprendizaje alineada con los objetivos de tu empresa.</p>               
         </header>        
         <div class="cursos-flex">
             <div class="curso">
-                <img src="./imgs/excel01.webp" alt="Curso de Excel">
+                <img src="./img/ia.webp" alt="">
                 <div class="curso-content">
-                    <h3>Curso Excel</h3>
-                    <p>Impartimos cursos de Excel en todos los niveles. Aprende desde las funciones esenciales hasta técnicas avanzadas, adaptándonos a tus necesidades profesionales específicas.</p>
+                    <h3>Nuevas habilidades IA</h3>
+                    <h4>IA Generativa | Machine Learning</h4>
+                    <p>Descubre cómo aprovechar la inteligencia artificial para potenciar la productividad, creatividad, innovación, competitividad y toma de decisiones estratégicas en tu empresa.</p>
                 </div>               
             </div>
             <div class="curso">
-                <img src="./imgs/ia.webp" alt="">
+                <img src="./img/ia.webp" alt="">
                 <div class="curso-content">
-                    <h3>IA</h3>
-                    <p>Impulsa tu empresa con inteligencia artificial: capacita a tu equipo en tecnologías clave para optimizar procesos y liderar la innovación.</p>
+                    <h3>Nuevas habilidades IA</h3>
+                    <h4>IA Generativa | Machine Learning</h4>
+                    <p>Descubre cómo aprovechar la inteligencia artificial para potenciar la productividad, creatividad, innovación, competitividad y toma de decisiones estratégicas en tu empresa.</p>
                 </div>               
             </div>
             <div class="curso">
-                <img src="./userData/es/image/photos/67364283eab3d.jpg" alt="">
+                <img src="./img/ia.webp" alt="">
                 <div class="curso-content">
-                    <h3>Curso Básico de Microsoft Word</h3>
-                    <p>Aprende a crear, editar utilizando funciones avanzadas como tablas, gráficos e imágenes.</p>
+                    <h3>Nuevas habilidades IA</h3>
+                    <h4>IA Generativa | Machine Learning</h4>
+                    <p>Descubre cómo aprovechar la inteligencia artificial para potenciar la productividad, creatividad, innovación, competitividad y toma de decisiones estratégicas en tu empresa.</p>
                 </div>               
             </div>
             <div class="curso">
-                <img src="./userData/es/image/photos/67364283eab3d.jpg" alt="">
+                <img src="./img/ia.webp" alt="">
                 <div class="curso-content">
-                    <h3>Curso Básico de Microsoft Word</h3>
-                    <p>Aprende a crear, editar utilizando funciones avanzadas como tablas, gráficos e imágenes.</p>
+                    <h3>Nuevas habilidades IA</h3>
+                    <h4>IA Generativa | Machine Learning</h4>
+                    <p>Descubre cómo aprovechar la inteligencia artificial para potenciar la productividad, creatividad, innovación, competitividad y toma de decisiones estratégicas en tu empresa.</p>
                 </div>               
             </div>
             <div class="curso">
-                <img src="./userData/es/image/photos/67364283eab3d.jpg" alt="">
+                <img src="./img/ia.webp" alt="">
                 <div class="curso-content">
-                    <h3>Curso Básico de Microsoft Word</h3>
-                    <p>Aprende a crear, editar utilizando funciones avanzadas como tablas, gráficos e imágenes.</p>
+                    <h3>Nuevas habilidades IA</h3>
+                    <h4>IA Generativa | Machine Learning</h4>
+                    <p>Descubre cómo aprovechar la inteligencia artificial para potenciar la productividad, creatividad, innovación, competitividad y toma de decisiones estratégicas en tu empresa.</p>
                 </div>               
             </div>
             <div class="curso">
-                <img src="./userData/es/image/photos/67364283eab3d.jpg" alt="">
+                <img src="./img/ia.webp" alt="">
                 <div class="curso-content">
-                    <h3 style="font-size:20px;">Curso Básico de Microsoft Word</h3>
-                    <p>Aprende a crear, editar utilizando funciones avanzadas como tablas, gráficos e imágenes.</p>
+                    <h3>Nuevas habilidades IA</h3>
+                    <h4>IA Generativa | Machine Learning</h4>
+                    <p>Descubre cómo aprovechar la inteligencia artificial para potenciar la productividad, creatividad, innovación, competitividad y toma de decisiones estratégicas en tu empresa.</p>
                 </div>               
             </div>            
         </div> <!-- Cursos Flex  -->
-        <a class="btn btn2">View ALl Programs</a>  
+        <p>¿Buscas algo diferente?</p>
+        <p>Mira nuestro <a href="cursos.html">catálogo de cursos</a> o crea tu <a href="amedida.html">curso personalizado</a></p>         
     </div>      
 </section>    
-<section class="mission">
-    <div class="section-container mission-container">
-        <header class="mission-header">
-            <h2>Formación de alta calidad</h2>
-            <p>Nuestra misión es proporcionar formación de alta calidad que potencie las habilidades de tus equipos, optimice sus competencias y fortalezca su desempeño. Ya sea que busques mejorar habilidades técnicas, competencias de liderazgo o fomentar una cultura de innovación, en Polaris creamos soluciones formativas adaptadas a tus objetivos.</p>
+<section class="form1">
+    <div class="section-container mission-container formContact">
+        <header class="form1-header">
+            <h2>Solicita información</h2>
         </header>                   
-        <div class="mission-flex">
-            <div class="mission-card">
-                <i class="fas fa-trophy"></i>
-                <div  class="mission-card-item">
-                    <h3>Misión de polaris</h3>
-                    <p>Nuestra misión es ofrecer formación de calidad que prepare a tu equipo con habilidades prácticas para enfrentar los desafíos profesionales y contribuir al éxito de tu empresa.</p>
-                </div>
-            </div>                 
-            <div class="mission-card">
-                <i class="fas fa-trophy"></i>
-                <div  class="mission-card-item">
-                    <h3>Misión de polaris</h3>
-                    <p>Nuestra misión es ofrecer formación de calidad que prepare a tu equipo con habilidades prácticas para enfrentar los desafíos profesionales y contribuir al éxito de tu empresa.</p>
-                </div>
-            </div>    
-        </div> <!-- Mission flex-->
-        <img src="./userData/es/image/photos/6736426838f16.png" class="adorno" alt="">
+        <form action="#" method="post">
+            <div class="form-group">
+                <input type="text" name="name" placeholder="Nombre" required>
+                <input type="email" name="email" placeholder="Correo electrónico" required>
+            </div>
+            <textarea class="textareaContact" name="message" placeholder="Escribe tu mensaje..." required></textarea>
+            <button type="submit" class="btnContact">Enviar</button>
+        </form>
 </section> <!-- Mission -->
 </main>
 <footer class="footer">
