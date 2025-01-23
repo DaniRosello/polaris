@@ -2,7 +2,7 @@
 * {
     margin: 0;
     padding: 0;
-    
+    box-sizing: border-box;
 }
 *::after, *::before {
     box-sizing: border-box;
@@ -17,9 +17,9 @@
     --color-light-blue-gray: #9c9e9c;
     --color-icon-bg: #b1ccdd;
     --color-border: #E0E0E0;
-    --color-dark-blue: #8086a3;
+    --color-dark-blue: #87b5d6;
     --color-logo-navy: #113159;
-    --color-logo-sky: #87b5d6;
+    --color-logo-sky: #cadfed;
 }
 
 /*  ********************************* * *  * * * * * * * * *  *********************************************** */
@@ -41,9 +41,17 @@ h6 {
     font-family: "Playfair", serif;
     font-optical-sizing: auto;
 }
-h1 {
-    font-size: 4rem;
+section:not(section:banner) {
+    padding: 50px 20px;
 }
+section header {
+    margin-bottom: 2rem;
+}
+section header > h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+
 /* BOTONES */
 a.btn {
     display: block;
@@ -76,7 +84,6 @@ a.btn1 {
 }
 a.btn2 {    
     color: var(--color-light-gray);
-    /* border: 2px solid var(--color-light-gray); */
     background-color: var(--color-dark-gray);
 }
 
@@ -119,12 +126,12 @@ a.logo > img {
 }
 i.fa-bars {
     font-size: 24px;
-    color: var(--color-logo-sky);
+    color: var(--color-logo-navy);
     cursor: pointer;
     
 }
 i.fa-bars:hover {    
-    color: var(--color-logo-navy);
+    color: var(--color-dark-blue);
     transition: .5s;    
 }
 nav.nav-desktop {
@@ -191,45 +198,37 @@ nav.nav-mobile a {
 /*FORM*/
 
 /* Form Section */
+
+section.contact {
+    
+    background-image: linear-gradient(#fff5,#fff5),url(../img/office2.jpg);
+    
+    
+}
 .formContact {
-    background: #b1ccdd;
-    padding: 100px;
-    border-radius: 30px;
-    max-width: 1000px;
-    width: 90%;
-    margin: 20px auto;
-    position: relative;
+    background: var(--color-icon-bg);
+    padding: 20px;
+    border-radius: 30px;    
+    text-align: right;     
 }
-
-.form-container:hover {
-    transform: scale(1.02);
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
-}
-
-.form-group {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 15px;
-    margin-bottom: 20px;
-}
-
-.form-group input {
-    flex: 1;
-    padding: 15px;
-    border: 1px solid black;
+form input, form textarea {
+    padding: 20px;
+    border: 1px solid var(--color-black);
     border-radius: 10px;
-    font-size: 1rem;
-    background: #b1ccdd;
+    /* font-size: 1rem; */
+    background: transparent;
+    width: 100%;
+    margin: 5px 0;
+    outline: none;
+}
+form input::placeholder, form textarea::placeholder {
+    color: var(--color-dark-gray);
 }
 
 .textareaContact {
-    width: 100%;
+   
     height: 160px;
-    padding: 15px;
-    border: 1px solid black;
-    border-radius: 10px;
-    font-size: 1rem;
-    background: #b1ccdd;
+    
 }
 
 .btnContact {
@@ -240,11 +239,7 @@ nav.nav-mobile a {
     border: none;
     border-radius: 40px;
     font-size: 1.2rem;
-    cursor: pointer;
-    position: absolute;
-    right: 50px;
-    bottom: 0;
-    margin-bottom: 20px;
+    cursor: pointer;   
 }
 
 .cardsContact {
@@ -268,52 +263,4 @@ nav.nav-mobile a {
 
 .card p {
     margin: 5px 0;
-}
-@media (max-width: 992px) {
-    .imgCorner {
-        width: 270px;
-        height: auto;
-    }
-    
-    .containerContact h2 {
-        font-size: 2rem;
-        padding-top: 80px;
-    }
-
-    .containerContact p {
-        font-size: 0.9rem;
-        max-width: 90%;
-    }
-
-    .form-group {
-        display: initial;
-        
-    }
-    .formContact {
-        background: #b1ccdd;
-        padding: 50px;
-        border-radius: 30px;
-        max-width: 350px;
-        /* width: 90%; */
-        margin: 20px auto;
-        position: relative;
-    }
-
-    .form-group input,
-    .textareaContact {
-        width: 100%;
-        margin: 20px;
-        margin-left: 0;
-    }
-
-    .btnContact {
-        font-size: 1rem;
-        padding: 10px;
-        margin-right: 200px;
-    } 
-    .cardsContact {
-        display: initial;
-       
-    }
-   
 }
