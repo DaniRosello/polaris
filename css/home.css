@@ -2,7 +2,7 @@
 .banner {
    
     color: var(--color-white);
-    background-image: linear-gradient(#0005,#0005),url("../img/meet01.jpg");
+    background-image: linear-gradient(#0007,#0007),url("../img/meet01.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;    
@@ -30,10 +30,10 @@
 }
 
 .banner-content h3 {
-    font-size: 2rem;
+    font-size: 1.3rem;
     /* margin-left: 160px; */
     margin-top: 20px;
-    font-size: 1rem;
+    
     font-weight: 400;    
 }
 
@@ -52,7 +52,10 @@ section.students {
     display: flex;
     gap: 16px;
 }
-
+.students-content > h4 {
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+}
 
 .students-item:first-of-type {
     background-color: var(--color-blue-gray);
@@ -67,10 +70,6 @@ section.students {
 .students-item i {
     font-size: 2rem;
 }
-.students-item h4 {
-    margin-bottom: 20px;
-}
-
 .students-image {
     width: 100%;
     border-radius: 0 0 30px 0;
@@ -83,6 +82,7 @@ section.students {
     color: var(--color-gray);
 }
 .text-medio-content h3 {
+    font-size: 1.5rem;
     margin-bottom: 20px;
 }
 
@@ -159,8 +159,7 @@ section.cursos {
     
 }
 .cursos-header {
-    text-align: center;
-    
+    text-align: center;    
     
 }
 .cursos-header h2 {
