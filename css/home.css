@@ -86,6 +86,8 @@ section.students {
     margin-bottom: 20px;
 }
 
+
+
 @media (min-width: 980px) {
     .banner-content {
         padding: 150px 50px;
@@ -156,6 +158,7 @@ section.students {
 section.cursos {
     background-color: var(--color-light-gray);
     color: var(--color-gray);
+    padding: 50px 20px
     
 }
 .cursos-header {
@@ -167,20 +170,37 @@ section.cursos {
 }
 .curso {
     border-radius: 30px;
-    border: 1px solid var(--color-dark-gray);
-    margin-bottom: 30px;
+    border: 1px solid var(--color-logo-sky);
+    margin: 0 auto 30px;
     background-color: var(--color-white);
+    max-width: 280px;
+    
 }
 .curso img {
     width: 100%;
     border-radius: 30px 30px 0 0;
+    height: 200px;
+    object-fit: cover;
 }
 .curso-content {
     padding: 20px;
 }
 .curso-content h3 {
-    font-size: 1rem;
-    margin-bottom: 20px;
+    font-size: 1.3rem;    
+}
+.curso-content h4 {
+    font-size: .8rem;   
+    font-weight: 400;
+    font-family: "Open Sans", Arial, sans-serif;
+    color: var(--color-dark-blue);
+    margin-bottom: .8rem;
+}
+.diferente {
+    text-align: center;
+
+}
+.diferente a {
+    
 }
 @media (min-width: 980px) {
     .cursos-flex {

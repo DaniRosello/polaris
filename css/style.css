@@ -51,6 +51,14 @@ section header > h2 {
     margin-bottom: 1.5rem;
 }
 
+p a {
+    color: var(--color-logo-navy);
+    text-decoration: none;
+}
+p a:hover {
+    text-decoration: underline;
+}
+
 /* BOTONES */
 a.btn {
     display: block;
@@ -201,6 +209,7 @@ nav.nav-mobile a {
 section.contact {
     
     background-image: linear-gradient(#fff5,#fff5),url(../img/office2.jpg);
+    padding: 50px 20px;
     
     
 }
@@ -209,6 +218,7 @@ section.contact {
     padding: 20px;
     border-radius: 30px;    
     text-align: right;     
+    max-width: 400px;
 }
 form input, form textarea {
     padding: 20px;
@@ -220,6 +230,11 @@ form input, form textarea {
     margin: 5px 0;
     outline: none;
 }
+
+form input:focus, form textarea:focus {
+    background-color: var(--color-logo-sky);
+}
+
 form input::placeholder, form textarea::placeholder {
     color: var(--color-dark-gray);
 }
