@@ -173,7 +173,7 @@ section.cursos {
     border: 1px solid var(--color-logo-sky);
     margin: 0 auto 30px;
     background-color: var(--color-white);
-    max-width: 280px;
+    max-width: 320px;
     
 }
 .curso img {
@@ -199,9 +199,7 @@ section.cursos {
     text-align: center;
 
 }
-.diferente a {
-    
-}
+
 @media (min-width: 980px) {
     .cursos-flex {
         display: flex;
