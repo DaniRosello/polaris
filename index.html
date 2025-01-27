@@ -56,11 +56,7 @@
     </ul>
 </nav>
 
-<script>
-    $('.fa-bars').click(function(){
-        $('.nav-mobile').slideToggle(500);
-    });   
-</script>
+<script src="./js/menu.js"></script>
 <main>
 <section class="banner">
     <div class="section-container">
@@ -167,19 +163,22 @@
     </div>      
 </section>    
 <section class="contact">
-    <header>
-        <h2>Solicita información</h2>  
-    </header>
-      
-    <form action="#" method="post" class="section-container mission-container formContact">
-        <div class="form-group">
-            <input type="text" name="name" placeholder="Nombre*" required>
-            <input type="tel" name="name" placeholder="Teléfono*" required>
-            <input type="email" name="email" placeholder="Correo electrónico*" required>
-        </div>
-        <textarea class="textareaContact" name="message" placeholder="Mensaje*" required></textarea>
-        <input type="submit" class="btnContact">
-    </form>
+    <div class="section-container">    
+        <header>
+            <h2>Solicita información</h2>  
+        </header>
+        
+        <form action="#" method="post" class="section-container mission-container formContact">
+            <div class="form-group">
+                <input type="text" name="empresa" placeholder="Nombre de la empresa">
+                <input type="tel" name="telefono" placeholder="Teléfono*" required>
+                <input type="text" name="nombre" placeholder="Nombre*" required>    
+                <input type="email" name="email" placeholder="Correo electrónico*" required>
+            </div>
+            <textarea class="textareaContact" name="message" placeholder="Mensaje*" required></textarea>
+            <input type="submit" class="btnContact">
+        </form>
+    </div> <!-- Container -->
 </section> <!-- Mission -->
 </main>
 <footer class="footer">

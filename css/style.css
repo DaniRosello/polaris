@@ -1,10 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap');
-* {
+*,
+*::after, 
+*::before {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-}
-*::after, *::before {
     box-sizing: border-box;
 }
 :root {
@@ -43,6 +42,7 @@ h6 {
 section:not(section:banner) {
     padding: 50px 20px;
 }
+
 section header {
     margin-bottom: 2rem;
 }
@@ -52,7 +52,7 @@ section header > h2 {
 }
 
 p a {
-    color: var(--color-logo-navy);
+    color: var(--color-dark-blue);
     text-decoration: none;
 }
 p a:hover {
@@ -99,6 +99,7 @@ a.btn2 {
 p {
     line-height: 1.5rem;
     font-size: 0.9rem;
+    margin-bottom: 10px;
     
 }
 
@@ -194,13 +195,8 @@ nav.nav-mobile a {
     nav.nav-desktop a:hover {
         color: var(--color-logo-navy);
 
-    }
-
-
-
-    
+    }    
 }
-
 
 /*FORM*/
 
@@ -211,6 +207,10 @@ section.contact {
     background-image: linear-gradient(#fff5,#fff5),url(../img/office2.jpg);
     padding: 50px 20px;
     
+    
+}
+.contact header > h2 {
+    font-size: 3.5rem;
     
 }
 .formContact {
@@ -277,4 +277,22 @@ form input::placeholder, form textarea::placeholder {
 
 .card p {
     margin: 5px 0;
+}
+@media (min-width: 980px) {
+    .formContact {           
+            
+        max-width: initial;
+    }
+
+    .form-group {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+        margin-bottom: 20px;
+    }
+
+    .form-group > * {
+        flex: 1 1 400px;
+    }
+
 }

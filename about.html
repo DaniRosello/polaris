@@ -10,20 +10,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/nav.css">
- 
-    <link rel="stylesheet" href="./css/questions.css">
-  
-    <link rel="stylesheet" href="./css/mobil.css">
-  
-    <link rel="stylesheet" href="./css/home.css">
+    <link rel="stylesheet" href="./css/style.css"> 
     <link rel="stylesheet" href="./css/about.css">
-    <link rel="stylesheet" href="./css/admissions.css">
-    <link rel="stylesheet" href="./css/blog.css">
-    <link rel="stylesheet" href="./css/contact.css">
-    <link rel="stylesheet" href="./css/editor.css">
-    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/footer.css">   
+
 
    
 
@@ -40,227 +30,126 @@
     </style>
 </head>
 <body>
-<nav class="navbar">
-  <div class="menu-toggle fa fa-bars"></div>
-  <a class="logo" href="./">
-        <img src="./icon/logo.png" alt="Logo">
-    </a>
-
-    <div class="nav-ul">
-
+<header class="main-header"> 
+    <a class="logo" href="./index.html"><img src="./icon/logo.png" alt="Logotipo Polaris"></a>
+    <i class="menu-toggle fas fa-bars"></i>  
+    <nav class="nav-ul nav-desktop">
         <ul class="nav-links">            
-                <li><a href="./about.html" id="aboutBtn">Acerca de</a></li>
-                <li><a href="./admissions.html" id="admissionsBtn">Admisiones</a></li>
-                <li><a href="./blog.html" id="blogBtn">Blog</a></li>
-                <li><a href="./contact.html" id="contactBtn">Contacto</a></li>           
+            <li><a href="./about.html">Sobre nosotros</a></li>
+            <li><a href="./admissions.html">Formación a medida</a></li>
+            <li><a href="./blog.html">Cursos</a></li>
+            <li><a href="./contact.html">Bonicación</a></li>
+            <li><a href="./contact.html">Contacto</a></li>            
         </ul>
-    </div>
+    </nav>    
+</header>
+<nav class="nav-ul nav-mobile">
+    <ul class="nav-links">            
+        <li><a href="./about.html">Sobre nosotros</a></li>
+        <li><a href="./admissions.html">Formación a medida</a></li>
+        <li><a href="./blog.html">Cursos</a></li>
+        <li><a href="./contact.html">Bonicación</a></li>     
+        <li><a href="./contact.html">Contacto</a></li>       
+    </ul>
 </nav>
 
-<script>
-    document.querySelector('.menu-toggle').addEventListener('click', function() {
-        document.querySelector('.nav-links').classList.toggle('active');
-    });
-</script>
-
-<div class="containerAbout_about">
-
-
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                      <div class="item">
-                
-                <div class="capecera_about"  style="background-image: url('./userData/es/image/photos/67364bbe3601d.jpg')">
-                    <div class="title_about">
-                    <h1 name="titel" onclick="editText2(this)">About Us</h1>
-                    </div>
+<script src="./js/menu.js"></script>
+<main>
+    <section class="banner-about">
+        <div class="section-container">
+            <h1>Sobre nosotros</h1>
+        </div>
+        
+        
+    </section>
+    <section class="formacion-a-medida">
+        <div class="section-container">
+            <header>
+                <h2>Impulsamos el talento empresarial con formación a medida</h2>
+            </header>
+            <p>En Polaris, somos expertos en <strong>formación empresarial personalizada</strong>, comprometidos en potenciar el talento y las habilidades de los equipos de trabajo.</p>
+            <p>Nuestro objetivo es acompañar a las empresas en su camino hacia la excelencia, proporcionándoles herramientas prácticas y conocimiento actualizado que se traduzcan en resultados reales. Ya sea mediante formación presencial en la empresa o aula virtual con profesor en directo, nuestros cursos están diseñados para adaptarse a los objetivos y características de cada organización.</p>
+            <p>Gestionamos las bonificaciones de formación mediante <a href="https://agorarrhh.com" target="_blank">Ágora Recursos Humanos</a>, un partner de confianza, especializado en asegurar el cumplimiento de todos los requisitos establecidos por <abbr title="Fundación Estatal para la Formación en el Empleo">FUNDAE</abbr>. Este aliado estratégico no solo garantiza la correcta tramitación de las bonificaciones, sino que también elabora informes detallados y adaptados a la normativa vigente. Gracias a esta colaboración, ofrecemos a nuestros clientes total transparencia en el proceso, permitiéndoles aprovechar al máximo los recursos disponibles para la formación de sus equipos.</p>
+        </div>
+    </section>
+    <section class="poder-formacion">
+        
+        <div class="poder-flex-container">
+            <div class="image-container">  
+                <img src="./img/meet03.jpg" alt="Alumnos en clase">
+            </div>
+            <div class="poder-formacion-content">
+                <div>
+                    <h2>El Poder Transformador de la Formación</h2>
+                    <p>
+                    En Polaris, creemos que la formación es el motor clave para la transformación y el crecimiento empresarial.
+                    Nos comprometemos a ser tu socio estratégico, diseñando programas formativos personalizados que potencien
+                    el talento de tu equipo y fortalezcan su capacidad para alcanzar los objetivos empresariales.
+                    </p>
+                    <button>Solicita Información</button>
                 </div>
-                 
             </div>
-                                                                                                                                                                                                                                                                      
-
-   
-
-    <section class="section1_about">
-
-        <div class="item"><input type="hidden" name="job" value="updateColumnValues"><input type="hidden" name="id" value="33"><div ondblclick="editText(this)" class="html-content" name="titel"><h2>Proporcionando la capacidad de perseguir oportunidades</h2></div><div ondblclick="editText(this)" class="html-content" name="text"><p>"Les brindamos a su equipo las herramientas necesarias para tomar el control de su futuro y aprovechar nuevas oportunidades con confianza. Con nuestra formación, sus colaboradores desarrollarán habilidades clave para destacar, enfrentar desafíos y maximizar cada oportunidad que se presente. ¡Es el momento de potenciar su empresa y alcanzar el éxito que merece!"</p><p><br></p></div></div>
-        <div class="item"><input type="hidden" name="job" value="updateColumnValues"><input type="hidden" name="id" value="34"><div ondblclick="editText(this)" class="html-content" name="text"><p>"¡Desaten el potencial de su equipo y lleven a su empresa al éxito! Con nuestra formación especializada, su personal estará listo para afrontar nuevos desafíos, aprovechar oportunidades y destacarse en el mundo empresarial. ¡Es hora de dar el siguiente paso hacia un futuro brillante para su organización!"</p></div></div>     
-     <div class="imgs_about">
-           
-                                                                                                                                                                                                                                                                                                                                                                                                                                                <div class="item">
-                <input type="hidden" name="job" value="updateColumnValues">
-                <input type="hidden" name="id" value="36">
-                <img class="img1_about" src="../userData/es/image/photos/67364be5d88cd.jpg" name="image" ondblclick="editImage(this)" style="width:500px ; height:500px" alt="">
-            </div>
-                                                                                                                                                                                                                                                                                              
-                                                                                                                                                                                                                                                                                                                                                                                                                                                          <div class="item">
-                <input type="hidden" name="job" value="updateColumnValues">
-                <input type="hidden" name="id" value="37">
-                <img class="img2_about" src="../userData/es/image/photos/67485bcd2f564.jpg" name="image" ondblclick="editImage(this)" style="width:500px ; height:300px" alt="">
-            </div>
-                                                                                                                                                                                                                                                                                  
 
         </div>
+            
+
+        
     </section>
-
-    <section class="section2_about">
-
-       <div class="item"><input type="hidden" name="job" value="updateColumnValues"><input type="hidden" name="id" value="35"><img class="image_02_about" src="../userData/es/image/photos/67364bfc109c7.jpg" name="image" ondblclick="editImage(this)" style="width:700px ; height:750px" alt=""></div>
-        <div class="txtsection2_about">
-           
-            <div class="item"><input type="hidden" name="job" value="updateColumnValues"><input type="hidden" name="id" value="31"><div ondblclick="editText(this)" class="html-content" name="titel"><p><strong>Únete a nuestras miles de empresas que confían en nosotros</strong></p></div><div ondblclick="editText(this)" class="html-content" name="text"><p>"¡Únete a las empresas que ya están transformando el futuro de su equipo! En Polaris, ofrecemos la formación que tu organización necesita para destacar en el mundo profesional. No pierdas la oportunidad de ser parte de una comunidad empresarial comprometida con el éxito. ¡Inscríbete ahora y lleva a tu equipo hacia el éxito!"</p></div></div>           
-           <div class="span_about">
-    
-                <strong class="blod_about" id="students">0</strong>
-                <strong class="blod_about" id="countries">0</strong>
-                <strong class="blod_about" id="programs">0</strong>
-
-                <span>Students</span>
-                <span>Countries</span>               
-                <span>Programs</span>
-            </div>
-        </div>
-    </section>
-
-    <section class="section3_about">
-        <div class="part1">
-
-                                                                                                                                                                                                                                                                                                                                                                                            <div class="item">
-                <input type="hidden" name="job" value="updateColumnValues">
-                <input type="hidden" name="id" value="32">
-                 <h2 name="titel" ondblclick="editText2(this)">Ofrecemos una amplia variedad de cursos y certificados en una fracción del tiempo.</h3>
-                <img src="../userData/es/image/photos/6736522f7c51c.png" name="image" ondblclick="editImage(this)" style="width:260px ; height:270px" alt="">
-            </div>
-                                                                                                                                                                                                                                                                                                                                                       
-        </div>
-        <div class="txtsection3_about">
-            <div class="txt_about txt1_about">
-
-            <div class="item"><input type="hidden" name="job" value="updateColumnValues"><input type="hidden" name="id" value="28"><div ondblclick="editText(this)" class="html-content" name="titel"><p><strong>Cursos de Ofimática</strong></p></div><div ondblclick="editText(this)" class="html-content" name="text"><p>Ofrecemos cursos de ofimática diseñados para mejorar tus habilidades en herramientas clave como Microsoft Office, Excel, Word, PowerPoint y más. Aprende a tu propio ritmo y mejora tu productividad en el entorno laboral con formación práctica y accesible.</p></div></div>             
-            </div>
-            <div class="txt_about txt2_about">
-                
-            <div class="item"><input type="hidden" name="job" value="updateColumnValues"><input type="hidden" name="id" value="29"><div ondblclick="editText(this)" class="html-content" name="titel"><p><strong>cursos de inteligencia artificial</strong></p></div><div ondblclick="editText(this)" class="html-content" name="text"><p>Ofrecemos cursos de inteligencia artificial diseñados para brindarte los conocimientos y habilidades necesarios para dominar esta tecnología clave. Aprende desde lo básico hasta aplicaciones avanzadas y mejora tu capacidad para innovar y enfrentar los desafíos del mundo profesional.</p></div></div>
-            </div>
-            <div class="txt_about txt3_about">
-               
-            <div class="item"><input type="hidden" name="job" value="updateColumnValues"><input type="hidden" name="id" value="30"><div ondblclick="editText(this)" class="html-content" name="titel"><p><strong>Gran variedad de cursos</strong></p></div><div ondblclick="editText(this)" class="html-content" name="text"><p>Ofrecemos una variedad de cursos especializados en áreas clave como ofimática, inteligencia artificial, y más. Aprende de manera práctica y acelera tu crecimiento profesional con formación accesible y de calidad.</p></div></div>
-            </div>
-        </div>
-    </section>
-</div>
-
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-<link rel="stylesheet" href="../css/footer.css">
+</main>
 <footer class="footer">
-  <div class="footer-container">
-    <div class="footer-column">
-      <a href="https://discord.com" target="_blank">
-          <i class="fab fa-discord"></i>
-      </a>
-      <h2 class="footer-title">Universidad Divi</h2>
-      <p class="footer-text">Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet.</p>
-      <div class="footer-contact">
-        <p>1234 Divi St. #1000, San Francisco, CA 94220</p>
-        <p><a href="mailto:hello@divionlineuniversity.com">hello@divionlineuniversity.com</a></p>
-        <p><a href="tel:+12553526258">(255) 352-6258</a></p>
+    <div class="section-container footer-container">
+      <div class="footer-column">
+        <img src="./icon/polaris_logo_blanco.png" alt="Logotipo Polaris de color blanco" class="logo-blanco">
+        <h4 class="footer-title">Universidad Divi</h4>
+        <p class="footer-text">Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet.</p>
+        <div class="footer-contact">
+          <p>1234 Divi St. #1000, San Francisco, CA 94220</p>
+          <p><a href="mailto:hello@divionlineuniversity.com">hello@divionlineuniversity.com</a></p>
+          <p><a href="tel:+12553526258">(255) 352-6258</a></p>
+        </div>
+        <div class="social">
+          <a href="https://www.facebook.com" target="_blank" class="fab fa-facebook-f">
+              
+          </a>
+          <a href="https://x.com" target="_blank" class="fab fa-x">
+              
+          </a>
+          <a href="https://www.instagram.com" target="_blank" class="fab fa-instagram">
+              
+          </a>
+        </div>
       </div>
-      <div class="icons">
-        <a href="https://www.facebook.com" target="_blank">
-            <i class="fab fa-facebook"></i>
-        </a>
-        <a href="https://x.com" target="_blank">
-            <i class="fas fa-x"></i>
-        </a>
-        <a href="https://www.instagram.com" target="_blank">
-            <i class="fab fa-instagram"></i>
-        </a>
+  
+      <div class="footer-column">
+          <h4 class="footer-title">Explore</h4>
+          <p><a href="#">Estudia con nosotros</a></p>
+          <p><a href="#">Aprendizaje a distancia soportado</a></p>
+          <p><a href="#">Financiación de tus estudios</a></p>
+          <p><a href="#">Reputación global</a></p>
+          <p><a href="#">Aprendizajes</a></p>
+          <p><a href="#">Noticias y medios</a></p>
+        
+          
+          <p><a href="#">Estudiante / Tutor</a></p>
+          <p><a href="#">Personal</a></p>
+          <p><a href="#">Sistema de entrada de calificaciones en línea</a></p>
+          <p><a href="#">Carreras</a></p>
       </div>
-    </div>
+  
+      <div class="footer-column">
+          <h4 class="footer-title">Admission</h4>
+          <p class="footer-section-title">Admisión local</p>
+          <p><a href="#">Admisión local</a></p>
+          <p><a href="#">Admisión internacional</a></p>
+          <p><a href="#">Detalles de admisión</a></p>
+          <p class="footer-section-title">Declaración de accesibilidad</p>
+          <p><a href="#">Declaración de accesibilidad</a></p>
+          <p><a href="#">Condiciones de uso</a></p>
+          <p><a href="#">Política de privacidad</a></p>
+          <p><a href="#">Política de cookies</a></p>
+          <p><a href="#">Derechos de autor</a></p>
+      </div>
+    </div>  
+  </footer>    
+</body>
 
-    <div class="footer-column">
-      <hr>
-      <p class="footer-section-title">Estudia con nosotros</p>
-      <p><a href="#">Estudia con nosotros</a></p>
-      <p><a href="#">Aprendizaje a distancia soportado</a></p>
-      <p><a href="#">Financiación de tus estudios</a></p>
-      <p><a href="#">Reputación global</a></p>
-      <p><a href="#">Aprendizajes</a></p>
-      <p><a href="#">Noticias y medios</a></p>
-      <hr>
-      <p class="footer-section-title">Estudiante / Tutor</p>
-      <p><a href="#">Estudiante / Tutor</a></p>
-      <p><a href="#">Personal</a></p>
-      <p><a href="#">Sistema de entrada de calificaciones en línea</a></p>
-      <p><a href="#">Carreras</a></p>
-    </div>
-
-    <div class="footer-column">
-      <hr>
-      <p class="footer-section-title">Admisión local</p>
-      <p><a href="#">Admisión local</a></p>
-      <p><a href="#">Admisión internacional</a></p>
-      <p><a href="#">Detalles de admisión</a></p>
-      <hr>
-      <p class="footer-section-title">Declaración de accesibilidad</p>
-      <p><a href="#">Declaración de accesibilidad</a></p>
-      <p><a href="#">Condiciones de uso</a></p>
-      <p><a href="#">Política de privacidad</a></p>
-      <p><a href="#">Política de cookies</a></p>
-      <p><a href="#">Derechos de autor</a></p>
-    </div>
-  </div>
-
-  <form method="post" action="../model/DataManagerController.php">
-    <div class="lang-selector">
-        <label for="languageSelector">Choose Language: </label>
-        <select id="languageSelector" name="language" onchange="this.form.submit()">
-            <option value="es" selected>Spanish</option>
-            <option value="ca" >Catalan</option>
-            <option value="en" >English</option>
-            <option value="ar" >Arabic</option>
-            <option value="fr" >French</option>
-            <option value="it" >Italian</option>
-            <option value="de" >German</option>
-        </select>
-    </div>
-  </form>
-</footer>
-
-
-<script>
-    
-    userRole = "";
-    language = "es";
-
-    function animateNumber(id, endValue) {
-        let startValue = 0;
-        const element = document.getElementById(id);
-        const duration = 2000;
-        const stepTime =20;
-        const increment = Math.ceil(endValue / (duration / stepTime));
-
-        const interval = setInterval(() => {
-            startValue += increment;
-            if (startValue >= endValue) {
-                startValue = endValue;
-                clearInterval(interval);
-            }
-            element.innerText = startValue >= 1000 ? Math.floor(startValue / 1000) + 'k+' : startValue; 
-        }, stepTime);
-    }
-
-    const observer = new IntersectionObserver((entries, observer) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                document.querySelectorAll('.blod_about').forEach(el => el.classList.add('visible'));
-                animateNumber('students', 50000); // 50k+
-                animateNumber('countries', 64);    // 64+
-                animateNumber('programs', 24);     // 24
-                observer.unobserve(entry.target);
-            }
-        });
-    }, {
-        threshold: 0.5
-    });
-
-    observer.observe(document.querySelector('.span_about'));
-</script>

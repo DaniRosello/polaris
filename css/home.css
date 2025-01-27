@@ -1,4 +1,5 @@
 
+
 .banner {
    
     color: var(--color-white);
@@ -37,7 +38,7 @@
     font-weight: 400;    
 }
 
-/*---------------SECCION ESTUDIANTES ------------------------------*/
+/*---------------SECCION CALIDAD Y EFICIENCIA ------------------------------*/
 section.students {
     background-color: var(--color-dark-gray);
     padding: 0 30px;
@@ -91,10 +92,24 @@ section.students {
 @media (min-width: 980px) {
     .banner-content {
         padding: 150px 50px;
-    }
-    .banner-content h1 {
-        font-size: 6rem;    
         
+    }
+
+    
+    .banner-content h1 {
+        font-size: 6rem; 
+        line-height: 6rem;   
+        
+    }
+
+   
+    
+    .banner-content h3 {
+        font-size: 1.3rem;
+        /* margin-left: 160px; */
+        margin-top: 20px;
+        
+        font-weight: 400;    
     }
     section.students {
         padding: 0;
@@ -112,10 +127,11 @@ section.students {
     }
     .text-medio-content {
         border-radius: 0;
+
         
     }
     .text-medio-content h3 {
-        font-size: 2rem;
+        font-size: 3rem;
         
     }
     .text-medio-content > * {
@@ -148,6 +164,11 @@ section.students {
     div.text-medio-content {
         margin: 0;
     }
+    .students-image {
+       height: 100%;
+       border-radius: initial;
+       object-fit: cover;
+    }
 
     
 
@@ -165,8 +186,9 @@ section.cursos {
     text-align: center;    
     
 }
-.cursos-header h2 {
-    margin-bottom: 40px;
+
+.cursos-header p {
+    margin: 30px auto 20px;
 }
 .curso {
     border-radius: 30px;
@@ -198,7 +220,9 @@ section.cursos {
 .diferente {
     text-align: center;
 
+
 }
+
 
 @media (min-width: 980px) {
     .cursos-flex {
@@ -210,72 +234,19 @@ section.cursos {
         flex: 1 1 300px;
     }
     .cursos-header h2 {
-        font-size: 3rem;
+        font-size: 3.5rem;
+        
+    }
+    .cursos-header p {
+        font-size: 1.1rem;
+        max-width: 600px;
+        
+    }
+    .diferente p {
+        font-size: 1.1rem;
+        
     }
 }
 
 
-/* MISSION */
-section.mission {
-    padding: 30px;
-    background-color: var(--color-white);   
-    color: var(--color-gray);
-    background-repeat: no-repeat;
-    background-position: 0 600px, 0;
 
-}
-
-.mission-header h2 {
-    font-size: 1.2rem;
-    margin-bottom: 40px;
-}
-
-.mission-card {
-    border: 1px solid var(--color-gray);
-    border-radius: 30px;
-    padding: 20px;
-    margin: 20px 0;
-}
-.mission-card h3 {
-    margin: 20px 0;
-}
-.mission-card .fas {
-    font-size: 2rem;
-    background-color: var(--color-gray);    
-    color: var(--color-blue-gray);
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.mission-card:first-of-type {
-    background-color: var(--color-gray);
-    color: var(--color-light-gray);
-}
-.mission-card:first-of-type i {
-    background-color: var(--color-blue-gray);
-    color: var(--color-gray);
-}
-
-img.adorno {
-    display: none;
-}
-@media (min-width: 980px) {
-    section.mission {
-        padding: 100px;
-       
-    }
-    .mission-header h2 {
-        font-size: 2.5rem;
-        margin-bottom: 30px;
-    }
-    .mission-header p:last-of-type {
-        margin-bottom: 30px;
-    }
-    .mission-flex {
-        display: flex;
-        gap: 30px;
-    }
-}
