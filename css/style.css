@@ -218,10 +218,10 @@ section.contact {
     background: var(--color-icon-bg);
     padding: 20px;
     border-radius: 30px;    
-    text-align: right;     
+      
     max-width: 400px;
 }
-form input, form textarea {
+form input:not(input[type="checkbox"],input[type="submit"]), form textarea, select {
     padding: 20px;
     border: 1px solid var(--color-black);
     border-radius: 10px;
@@ -231,8 +231,11 @@ form input, form textarea {
     margin: 5px 0;
     outline: none;
 }
+form input[type="checkbox"]{
+    margin-bottom: 10px;
+}
 
-form input:focus, form textarea:focus {
+form input:not(input[type="checkbox"],input[type="submit"]):focus, form textarea:focus {
     background-color: var(--color-logo-sky);
 }
 
@@ -245,7 +248,9 @@ form input::placeholder, form textarea::placeholder {
     height: 160px;
     
 }
-
+div.submitButton {
+    text-align: right;
+}
 .btnContact {
     width: 150px;
     padding: 20px;

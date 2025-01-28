@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Polaris </title>
-    <link rel="shortcut icon" href="icon/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="./icon/star-cyan.png" type="image/x-icon">
 
     <!-- FontAwesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
@@ -66,28 +66,34 @@
 
    </section>
    <section class="configurar-curso">
-        <div class="flex-configurar-curso">
-            <div class="left-column-configurar-curso">
-                <h2>Empieza a configurar tu curso</h2>            
-                <img src="./img/office1.jpg" alt="Sillas y mesa de oficina" class="">
-            </div>
-            <div class="right-column-configurar-curso">
-                <p>En Polaris, queremos que configurar el curso ideal para tu organización sea un proceso sencillo y accesible. Por eso, te ofrecemos <b>múltiples formas de contactarnos</b> para empezar:</p>
-                <div class="tarjeta-configurar-curso">
-                    <h3>Llámanos por teléfono</h3>
-                    <p>Habla con nosotros para analizar tus necesidades formativas. Llámanos al <a href="tel: +34602256136">602 256 136</a> y estaremos encantados de ayudarte.</p>
+        
+            <div class="flex-configurar-curso">
+                <div class="left-column-configurar-curso">
+                    <h2>Empieza a<br> configurar tu curso</h2>            
+                    <img src="./img/office1.jpg" alt="Sillas y mesa de oficina" class="">
                 </div>
-                <div class="tarjeta-configurar-curso">
-                    <h3>Escríbenos un email</h3>
-                    <p>Si lo prefieres prefieres, mándanos un email a <a href="mailto:hola@polarisdata.es">hola@polarisdata.es</a> describiendo brevemente tus necesidades, y nos pondremos en contacto contigo rápidamente.</p>
+                <div class="right-column-configurar-curso">
+                    <div class="configurar-curso-content">
+                        <p>En Polaris, queremos que configurar el curso ideal para tu organización sea un proceso sencillo y accesible. Por eso, te ofrecemos <b>múltiples formas de contactarnos</b> para empezar:</p>
+                        <div class="tarjeta-configurar-curso">
+                            <h3><i class="fas fa-phone"></i> Llámanos por teléfono</h3>
+                            <p>Habla con nosotros para analizar tus necesidades formativas. Llámanos al <a href="tel: +34602256136">602 256 136</a> y estaremos encantados de ayudarte.</p>
+                        </div>
+                        <div class="tarjeta-configurar-curso">
+                            <h3><i class="fas fa-envelope"></i> Escríbenos un email</h3>
+                            <p>Si lo prefieres prefieres, mándanos un email a <a href="mailto:hola@polarisdata.es">hola@polarisdata.es</a> describiendo brevemente tus necesidades, y nos pondremos en contacto contigo rápidamente.</p>
+                        </div>
+                        <div class="tarjeta-configurar-curso">
+                            <h3><i class="fas fa-edit"></i> Rellena el formulario</h3>
+                            <p>Completa el <a href="#formulario-amedida">formulario en esta página</a> indicando los detalles básicos de tu empresa y lo que buscas. Nosotros nos encargaremos del resto.</p>
+                        </div>
+                    </div>
+                    
                 </div>
-                <div class="tarjeta-configurar-curso">
-                    <h3>Rellena el formulario</h3>
-                    <p>Completa el <a href="#formulario-amedida">formulario en esta página</a> indicando los detalles básicos de tu empresa y lo que buscas. Nosotros nos encargaremos del resto.</p>
-                </div>
-            </div>
-
-        </div> <!-- Flex Configurar curso -->
+    
+            </div> <!-- Flex Configurar curso -->
+        
+       
     </section>
     <section class="contact contact-amedida">
         <div class="section-container">    
@@ -105,20 +111,52 @@
                 <h3>SOBRE EL CURSO</h3>
                 <textarea class="textareaContact" name="message" placeholder="  NECESIDAD FORMATIVA / OBJETIVOS*" required></textarea>
                 <div class="form-group">
-                    <select name="perfil" id="perfil">
-                        <option value="RRHH / Legal">Recursos Humanos / Legal</option>
-                        <option value="Finanzas / Administación">Finanzas / Administación</option>
-                        <option value="Marketing, Ventas y Servicio al cliente">Marketing, Ventas y Servicio al cliente</option>
-                        <option value="Tecnología y Desarrollo">Tecnología y Desarrollo</option>
-                        <option value="Producción, Operaciones y logística">Producción, Operaciones y logística</option>
-                        <option value="Dirección y Gerencia">Dirección y Gerencia</option>
-                    </select>
+                    <div>
+                        <p>Marca los perfiles de los destinatarios:</p>
+                        <div><input type="checkbox" name="pefil" value="RRHH / Legal" id="rrhh"><label for="rrhh"> Recursos Humanos / Legal</label></div>
+                    
+                        <div><input type="checkbox" name="pefil" value="Finanzas / Administación" id="finanzas"><label for="finanzas"> Finanzas / Administación</label></div>
+    
+                        <div><input type="checkbox" name="pefil" value="Marketing, Ventas y Servicio al cliente" id="marketing"><label for="marketing"> Marketing, Ventas y Servicio al cliente</label></div>
+    
+                        <div><input type="checkbox" name="pefil" value="Tecnología y Desarrollo" id="tecno"><label for="tecno"> Tecnología y Desarrollo</label></div>
+    
+                        <div><input type="checkbox" name="pefil" value="Producción, Operaciones y logística" id="logistica"><label for="logistica"> Producción, Operaciones y logística</label></div>
+    
+                        <div><input type="checkbox" name="pefil" value="Dirección y Gerencia" id="direccion"><label for="direccion"> Dirección y Gerencia</label></div>
+    
+                    </div>
+                    <div>
+                        <select name="metodologia" id="metodologia">
+                            <option disabled selected>Metodología:</option>
+                            <option value="Presencial">Presencial</option>
+                            <option value="Aula virtualMixta">Aula virtualMixta</option>
+                            <option value="Mixta">Mixta</option>
+                            <option value="No sabe">No sabe</option>
+                        </select>
+                        <select name="idioma" id="idioma">
+                            <option disabled selected>Idioma</option>
+                            <option value="Castellano">Castellano</option>
+                            <option value="Catalán">Catalán</option>
+                            <option value="Infiferente">Infiferente</option>
+                        </select>
+                        <input type="number" placeholder="Número de participantes" name="participantes">
+                    </div>
+                    
                 </div>
+               
+                
+                
+                
+               
+               
                 
                 
                 
                 
-                <input type="submit" class="btnContact">
+                <p><input type="checkbox" name="proteccion-datos" required> Acepto los términos y las condiciones.</p> 
+                <p><small>En cumplimiento de la normativa de protección de datos se le informa que el responsable del tratamiento de los datos es Polaris S.L. La finalidad del tratamiento: Envío de información de nuestros cursos. La legitimación la conseguimos gracias a tu consentimiento. Tus datos estarán en nuestro fichero. Tus derechos: En cualquier comento puedes acceder, rectificar, eliminar tus datos personales, para ello ponte en contacto con nosotros.</small></p>
+                <div class="submitButton"><input type="submit" class="btnContact"></div>
 
             </form>
         </div>

@@ -17,6 +17,7 @@
 /* A medida*/
 section.amedida {
     padding: 30px 20px;
+    background-color: var(--color-white);
 }
 
 section.amedida h1 {
@@ -44,7 +45,7 @@ section.configurar-curso h2 {
     padding: 20px;
     background-color: var(--color-green);
 }
-.right-column-configurar-curso > p {
+.configurar-curso-content > p {
     margin-bottom: 30px;
 }
 
@@ -60,9 +61,66 @@ section.configurar-curso h2 {
     font-size: 1.5rem;
     margin-bottom: 5px;
 }
+.tarjeta-configurar-curso i{
+    font-size: 1.1rem;
+    color: var(--color-gray);
+}
 
 /* Formulario contact-amedida*/
 section.contact.contact-amedida {
     background-image: initial;
 
+}
+
+@media (min-width: 980px) {
+    /* A medida*/
+    section.amedida {
+        padding: 60px;
+    }
+
+    section.amedida h1 {
+        font-size: 4rem;
+        line-height: 4rem;
+        
+    }
+    /* Configurar curso */
+    .flex-configurar-curso {
+        display: flex;
+        overflow: hidden;
+    }
+    .flex-configurar-curso > * {
+        flex: 1 1 50%;
+    }
+
+
+    section.configurar-curso h2 {
+        text-align: right;
+        padding: 50px;
+        font-size: 4rem;
+        /* margin: 0 0 0; */
+    }
+    .configurar-curso-content {
+        max-width: 600px;
+        
+    }
+    .right-column-configurar-curso {
+        padding: 60px 50px;
+        
+    }
+    .configurar-curso-content > p {
+        margin-bottom: 50px;
+    }
+    
+   
+    
+    .tarjeta-configurar-curso h3{
+        font-size: 2rem;
+        margin-bottom: 5px;
+    }
+    .tarjeta-configurar-curso i{
+        font-size: 1.5rem;
+       
+    }
+    
+   
 }
