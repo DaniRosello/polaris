@@ -124,6 +124,8 @@ header.main-header {
     justify-content: space-between;
     align-items: center;
     position: relative;
+    box-shadow: 0 1px 10px black;
+    z-index: 1000;
     
 }
 header.main-header > * {
