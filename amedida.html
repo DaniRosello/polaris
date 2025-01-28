@@ -11,7 +11,7 @@
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="./css/style.css"> 
-    <link rel="stylesheet" href="./css/about.css">
+    <link rel="stylesheet" href="./css/amedida.css">
     <link rel="stylesheet" href="./css/footer.css">   
 
 
@@ -55,88 +55,75 @@
 
 <script src="./js/menu.js"></script>
 <main>
-    <section class="banner-about">
+   <section class="amedida">
         <div class="section-container">
-            <h1>
-                Sobre nosotros
-
-            </h1>
+            <h1>Formación a medida</h1>
+            <p>En Polaris, entendemos que cada empresa es única y que sus necesidades formativas también lo son. Por eso, ofrecemos <strong>cursos totalmente a medida</strong>, diseñados específicamente para adaptarse a los objetivos, estructura y retos de tu organización.
+            </p>
+            <p>Nuestra metodología comienza con un análisis detallado de tus requerimientos. A partir de ahí, desarrollamos contenidos personalizados, ajustando el nivel, duración y formato del curso para garantizar la máxima relevancia y efectividad.
+            </p>
         </div>
-        
-        
-    </section>
-    <section class="formacion-a-medida">
-        <div class="section-container">
-            <header>
-                <h2>Impulsamos el talento empresarial con formación&nbsp;a&nbsp;medida</h2>
-            </header>
-            <p>En Polaris, somos expertos en <strong>formación empresarial personalizada</strong>, comprometidos en potenciar el talento y las habilidades de los equipos de trabajo.</p>
-            <p>Nuestro objetivo es acompañar a las empresas en su camino hacia la excelencia, proporcionándoles herramientas prácticas y conocimiento actualizado que se traduzcan en resultados reales. Ya sea mediante formación presencial en la empresa o aula virtual con profesor en directo, <u>nuestros cursos están diseñados para adaptarse a los objetivos y características de cada organización</u>.</p>
 
-        </div>
-    </section>
-    <section class="poder-formacion">
-        
-        <div class="poder-flex-container">
-            <div class="image-container">  
-                <img src="./img/meet03.jpg" alt="Alumnos en clase">
+   </section>
+   <section class="configurar-curso">
+        <div class="flex-configurar-curso">
+            <div class="left-column-configurar-curso">
+                <h2>Empieza a configurar tu curso</h2>            
+                <img src="./img/office1.jpg" alt="Sillas y mesa de oficina" class="">
             </div>
-            <div class="poder-formacion-content">
-                <div>
-                    <h2>El Poder Transformador de la Formación</h2>
-                    <p>
-                    En Polaris, creemos que la formación es el motor clave para la transformación y el crecimiento empresarial.
-                    Nos comprometemos a ser tu socio estratégico, diseñando <strong>programas formativos personalizados</strong> que potencien
-                    el talento de tu equipo y fortalezcan su capacidad para alcanzar los objetivos empresariales.
-                    </p>
-                    <a href="./contact.html" class="btn btn1">Solicita Información</a>
+            <div class="right-column-configurar-curso">
+                <p>En Polaris, queremos que configurar el curso ideal para tu organización sea un proceso sencillo y accesible. Por eso, te ofrecemos <b>múltiples formas de contactarnos</b> para empezar:</p>
+                <div class="tarjeta-configurar-curso">
+                    <h3>Llámanos por teléfono</h3>
+                    <p>Habla con nosotros para analizar tus necesidades formativas. Llámanos al <a href="tel: +34602256136">602 256 136</a> y estaremos encantados de ayudarte.</p>
+                </div>
+                <div class="tarjeta-configurar-curso">
+                    <h3>Escríbenos un email</h3>
+                    <p>Si lo prefieres prefieres, mándanos un email a <a href="mailto:hola@polarisdata.es">hola@polarisdata.es</a> describiendo brevemente tus necesidades, y nos pondremos en contacto contigo rápidamente.</p>
+                </div>
+                <div class="tarjeta-configurar-curso">
+                    <h3>Rellena el formulario</h3>
+                    <p>Completa el <a href="#formulario-amedida">formulario en esta página</a> indicando los detalles básicos de tu empresa y lo que buscas. Nosotros nos encargaremos del resto.</p>
                 </div>
             </div>
 
-        </div>        
+        </div> <!-- Flex Configurar curso -->
     </section>
-    <section class="elegirnos">
-        <div class="section-container">
-            <div class="elegirnos-flex-container">
-                <header>
-                    <h2>¿Por qué deberías<br> elegirnos?</h2>
-                    <img src="./icon/star-white.png" class="elegirnos-logo fa-spin" alt="Logotipo blanco">
-                </header> 
-                <div class="tarjetas-elegirnos">
+    <section class="contact contact-amedida">
+        <div class="section-container">    
+            <header>
+                <h2>Configura tu curso</h2>  
+            </header>    
+            <form action="#" method="post" class="section-container mission-container formContact" id="formulario-amedida">
+                <h3>DATOS DE CONTACTO</h3>
+                <div class="form-group">
+                    <input type="text" name="empresa" placeholder="Nombre de la empresa">
+                    <input type="tel" name="telefono" placeholder="Teléfono*" required>
+                    <input type="text" name="nombre" placeholder="Nombre*" required>    
+                    <input type="email" name="email" placeholder="Correo electrónico*" required>
+                </div>
+                <h3>SOBRE EL CURSO</h3>
+                <textarea class="textareaContact" name="message" placeholder="  NECESIDAD FORMATIVA / OBJETIVOS*" required></textarea>
+                <div class="form-group">
+                    <select name="perfil" id="perfil">
+                        <option value="RRHH / Legal">Recursos Humanos / Legal</option>
+                        <option value="Finanzas / Administación">Finanzas / Administación</option>
+                        <option value="Marketing, Ventas y Servicio al cliente">Marketing, Ventas y Servicio al cliente</option>
+                        <option value="Tecnología y Desarrollo">Tecnología y Desarrollo</option>
+                        <option value="Producción, Operaciones y logística">Producción, Operaciones y logística</option>
+                        <option value="Dirección y Gerencia">Dirección y Gerencia</option>
+                    </select>
+                </div>
                 
-                    <div class="tarjeta-elegirnos">
-                        <i class="fas fa-tools"></i>
-                        <div class="tarjeta-elegirnos-content">
-                            <h3>Flexibilidad total</h3>
-                            <p>Diseñamos cada curso a medida, adaptando el contenido, duración y modalidad según tus necesidades.</p>
-                        </div>                    
-                    </div>
-                    <div class="tarjeta-elegirnos">
-                        <i class="fas fa-certificate"></i>
-                        <div class="tarjeta-elegirnos-content">
-                            <h3>Calidad Garantizada</h3>
-                            <p>Contamos con un equipo de formadores altamente cualificados, expertos en sus áreas y con amplia experiencia práctica.</p>
-                        </div>                    
-                    </div>
-                    <div class="tarjeta-elegirnos">
-                        <i class="fas fa-chart-line"></i>
-                        <div class="tarjeta-elegirnos-content">
-                            <h3>Resultados tangibles</h3>
-                            <p>Nos enfocamos en formar equipos más productivos, creativos y preparados para afrontar los desafíos del mercado actual.</p>
-                        </div>                    
-                    </div>
-                    <div class="tarjeta-elegirnos">
-                        <i class="far fa-thumbs-up"></i>
-                        <div class="tarjeta-elegirnos-content">
-                            <h3>Gestión Integral</h3>
-                            <p>Facilitamos todos los procesos relacionados con las bonificaciones FUNDAE, optimizando tiempo y recursos para nuestros clientes.</p>
-                        </div>                    
-                    </div>
-                </div>            
-            </div>
-           
+                
+                
+                
+                <input type="submit" class="btnContact">
+
+            </form>
         </div>
-    </section>
+        
+   </section>
 </main>
 <footer class="footer">
     <div class="section-container footer-container">

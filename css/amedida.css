@@ -1,0 +1,68 @@
+:root {
+    --color-light-gray: #eeeeee;
+    --color-dark-gray: #2a2f31;
+    --color-white: #ffffff;
+    --color-blue-gray: #b1ccdd;
+    --color-green: #c9dbdb;
+    --color-black: black;
+    --color-gray: #333333;
+    --color-light-blue-gray: #9c9e9c;
+    --color-icon-bg: #b1ccdd;
+    --color-border: #E0E0E0;
+    --color-dark-blue: #87b5d6;
+    --color-logo-navy: #113159;
+    --color-logo-sky: #cadfed;
+}
+
+/* A medida*/
+section.amedida {
+    padding: 30px 20px;
+}
+
+section.amedida h1 {
+    font-size: 3rem;
+    line-height: 2.5rem;
+    margin-bottom: 30px;
+}
+
+/* Configurar curso */
+
+section.configurar-curso h2 {
+    background-color: var(--color-dark-gray);
+    color: var(--color-light-gray);
+    padding: 20px;
+    font-size: 2.5rem;
+    /* margin: 0 0 0; */
+}
+.left-column-configurar-curso img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin-bottom: -4px;
+}
+.right-column-configurar-curso {
+    padding: 20px;
+    background-color: var(--color-green);
+}
+.right-column-configurar-curso > p {
+    margin-bottom: 30px;
+}
+
+.right-column-configurar-curso a {
+    color: var(--color-logo-navy);
+    /* text-decoration: underline; */
+    font-weight: 700;
+}
+.tarjeta-configurar-curso {
+    margin-bottom: 30px;
+}
+.tarjeta-configurar-curso h3{
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+}
+
+/* Formulario contact-amedida*/
+section.contact.contact-amedida {
+    background-image: initial;
+
+}
