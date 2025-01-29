@@ -22,6 +22,99 @@ section.bonificacion {
 
 section.bonificacion h1 {
     font-size: 3rem;
-    line-height: 2.5rem;
+    line-height: 3rem;
     margin-bottom: 30px;
+}
+
+.tarjeta-beneficios figure img {
+    display: none;
+}
+.banner-bonificaciones {
+    padding: 80px 20px;
+    color: var(--color-white);
+    background-image: url(../icon/top.png),url(../icon/bottom.png),linear-gradient(#0008,#0008),url(../img/office1.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% , 100%, cover, cover;
+    background-position: top , bottom, center, center;
+}
+.banner-bonificaciones h3 {
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.agora {
+    background-color: white;
+    padding: 30px 20px;
+}
+.agora h2 {
+    font-size: 1.8rem;
+    line-height: 1.8rem;
+    margin-bottom: 1rem;
+}
+.agora img {
+    height: 30px;
+    
+}
+@media (min-width: 720px) { 
+    section.bonificacion {
+        padding: 60px;
+       
+    }
+    section.bonificacion h1 {
+        font-size: 4rem;
+        line-height: 4rem;
+        
+    }
+
+    .tarjeta-beneficios {
+        display: flex;
+        gap: 2rem;
+        margin: 2rem 0;
+
+        
+    }
+    .tarjeta-beneficios:last-of-type {
+        margin-bottom: 0;
+    }
+    .tarjeta-beneficios:nth-last-of-type(odd){
+        flex-direction: row-reverse;
+    }
+    .tarjeta-beneficios > * {
+        flex: 1 1 50%;
+        /* background-color: red; */
+        overflow: hidden;
+    }
+    
+    .tarjeta-beneficios figure img {
+        display: inline;
+        height: 250px;
+        width: 100%;
+        object-fit: cover;
+        border-radius: 30px;
+    }
+
+    .contenido-beneficios h2 {
+        margin-bottom: 10px;
+    }
+
+
+    .banner-bonificaciones {
+        padding: 200px;
+    }
+    .banner-bonificaciones h3 {
+        font-size: 2rem;
+        
+    }
+    .agora {
+        background-color: white;
+        padding: 60;
+    }
+    .agora h2 {
+        font-size: 3rem;
+        line-height: 3rem;
+        margin-bottom: 1rem;
+    }
+    .agora img {
+        height: 50px;
+        
 }
