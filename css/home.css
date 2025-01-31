@@ -3,13 +3,25 @@
 .banner {
    
     color: var(--color-white);
-    background-image: linear-gradient(#0007,#0007),url("../img/meet01.jpg");
+    /* background-image: linear-gradient(#000,#000),url("../img/meet01.jpg"); */
+    background-image: linear-gradient(#000,#000);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;    
     position: relative;
-    text-align: start;  
+    text-align: start; 
+    overflow: hidden; 
 
+
+}
+.banner-video {
+    position: absolute;
+    min-width: 100%;
+    min-height: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    opacity: .7;
 
 }
 .banner-content {
@@ -21,13 +33,30 @@
 }
 
 
+
 .banner-content h1 {
     font-size: 4rem;
     color: var(--color-white);
     text-align: left;
     /* text-shadow: 0 0 3px black; */
     line-height: 4rem;
+    text-shadow: 0 1px  0 #000;
+    animation-name: titulo;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    position: relative;
     
+    animation-delay: 1;
+    
+    
+}
+@keyframes titulo {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 .banner-content h3 {
