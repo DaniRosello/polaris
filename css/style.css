@@ -201,10 +201,10 @@ nav.nav-mobile a {
     }    
 }
 
-/*FORM*/
+/*      FORMURALIO CONTACTO    Todos los formularios   */
 
 /* Form Section */
-section.contact {
+section.contact.contacto {
     background-image: initial;
 }
 
@@ -947,6 +947,7 @@ section.bonificacion h1 {
     background-repeat: no-repeat;
     background-size: 100% , 100%, cover, cover;
     background-position: top , bottom, center, center;
+    background-attachment: scroll, scroll, scroll, fixed;
 }
 .banner-bonificaciones h3 {
     font-size: 1.5rem;
