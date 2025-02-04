@@ -204,6 +204,34 @@ nav.nav-mobile a {
 /*FORM*/
 
 /* Form Section */
+section.contact {
+    background-image: initial;
+}
+
+.contacto {
+    text-align: center;
+    margin: 50px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.cont {
+    margin-bottom: 20px;
+    flex: 1 0 280px;
+}
+
+.cont h3 {
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+}
+.cont a {
+    color: var(--color-dark-blue);
+    text-decoration: none;
+}
+.cont a:hover {
+    text-decoration: underline;
+}
+
 
 section.contact {
     
@@ -263,7 +291,6 @@ div.submitButton {
     font-size: 1.2rem;
     cursor: pointer;   
 }
-
 .cardsContact {
     display: flex;
     justify-content: space-around;
@@ -271,23 +298,20 @@ div.submitButton {
     padding: 20px;
     margin: 30px 80px;
 }
-
 .card {
     flex: 1;
     padding: 15px;
     border-radius: 8px;
 }
-
 .card h3 {
     margin: 0 0 10px;
     font-size: 1.2em;
 }
-
 .card p {
     margin: 5px 0;
 }
 @media (min-width: 980px) {
-    .formContact {           
+    .formContact { 
             
         max-width: initial;
     }
@@ -303,4 +327,770 @@ div.submitButton {
         flex: 1 1 400px;
     }
 
+}
+
+/*  ********************************* * *  * * * * * * * * *  *********************************************** */
+/*  ********************************* * *  *    HOME     * *  *********************************************** */
+/*  ********************************* * *  * * * * * * * * *  *********************************************** */
+
+
+.banner {
+    color: var(--color-white);
+    background-image: linear-gradient(#000,#000);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;    
+    position: relative;
+    text-align: start; 
+    overflow: hidden; 
+}
+.banner-video {
+    position: absolute;
+    min-width: 100%;
+    min-height: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    opacity: .7;
+}
+.banner-content {
+    position: relative;
+    z-index: 2;
+    max-width: 750px;
+    padding: 50px 20px;    
+}
+.banner-content h1 {
+    font-size: 4rem;
+    color: var(--color-white);
+    text-align: left;
+    line-height: 4rem;
+    text-shadow: 0 1px  0 #000;
+    animation-name: titulo;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    position: relative;    
+    animation-delay: 1;    
+}
+@keyframes titulo {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+.banner-content h3 {
+    font-size: 1.3rem;
+    /* margin-left: 160px; */
+    margin-top: 20px;
+    
+    font-weight: 400;    
+}
+/* HOME ---------------------------- SECCION CALIDAD Y EFICIENCIA */
+section.students {
+    background-color: var(--color-dark-gray);
+    padding: 0 30px;
+}
+.students-container {
+    background-color: var(--color-dark-gray);
+    padding: 20px;
+}
+.students-item {
+    padding: 20px;
+    border-radius: 30px 0 0 0;
+    display: flex;
+    gap: 16px;
+}
+.students-content > h4 {
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+}
+.students-item:first-of-type {
+    background-color: var(--color-blue-gray);
+    color: var(--color-gray)
+}
+.students-item:last-of-type {
+    color: var(--color-light-gray);
+    background-color: var(--color-dark-gray);
+}
+.students-item i {
+    font-size: 2rem;
+}
+.students-image {
+    width: 100%;
+    border-radius: 0 0 30px 0;
+}
+.text-medio-content {
+    background-color: var(--color-white);
+    margin-top: 20px;
+    padding: 30px;
+    border-radius: 0 30px 0 0;
+    color: var(--color-gray);
+}
+.text-medio-content h3 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+/* HOME --------------------  SECCION CALIDAD Y EFICIENCIA QUERY */
+@media (min-width: 980px) {
+    .banner-content {
+        padding: 100px 50px;        
+    }    
+    .banner-content h1 {
+        font-size: 6rem; 
+        line-height: 6rem;       
+    }    
+    .banner-content h3 {
+        font-size: 1.3rem;        
+        margin-top: 20px;        
+        font-weight: 400;    
+    }
+    section.students {
+        padding: 0;        
+    }
+    .text-medio {
+        display: flex;
+    }
+    .text-medio > *{
+        flex: 1 1 50%;
+    }
+    .text-medio-content {
+        border-radius: 0;        
+    }
+    .text-medio-content h3 {
+        font-size: 3rem;        
+    }
+    .text-medio-content > * {
+        max-width: 550px;
+    }    
+    .students-container {
+        background-color: initial;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        display: flex;
+        justify-content: flex-end;
+        padding: initial;
+        
+    }
+    .students-container > * {
+        flex: 0 0 25%;
+    }
+    .students-item:last-of-type {
+        border-radius: 0;
+    }
+    .text-medio-flex {
+        display: flex;
+        justify-content: flex-start;
+    }
+    .text-medio-flex >  * {
+        flex: 0 0 300px;
+    }
+    div.text-medio-content {
+        margin: 0;
+    }
+    .students-image {
+       height: 100%;
+       border-radius: initial;
+       object-fit: cover;
+    }   
+
+}
+
+/* HOME -----------------------  SECCION CURSOS     */
+section.cursos {
+    background-color: var(--color-light-gray);
+    color: var(--color-gray);
+    padding: 50px 20px;    
+}
+.cursos-header {
+    text-align: center;    
+}
+.cursos-header p {
+    margin: 30px auto 20px;
+}
+.curso {
+    border-radius: 30px;
+    border: 1px solid var(--color-logo-sky);
+    margin: 0 auto 30px;
+    background-color: var(--color-white);
+    max-width: 320px;
+    
+}
+.curso img {
+    width: 100%;
+    border-radius: 30px 30px 0 0;
+    height: 200px;
+    object-fit: cover;
+}
+.curso-content {
+    padding: 20px;
+}
+.curso-content h3 {
+    font-size: 1.3rem;    
+}
+.curso-content h4 {
+    font-size: .8rem;   
+    font-weight: 400;
+    font-family: "Open Sans", Arial, sans-serif;
+    color: var(--color-dark-blue);
+    margin-bottom: .8rem;
+}
+.diferente {
+    text-align: center;
+}
+/* HOME -----------------------  SECCION CURSOS   QUERY  */
+
+@media (min-width: 980px) {
+    .cursos-flex {
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+    .cursos-flex > * {
+        flex: 1 1 300px;
+    }
+    .cursos-header h2 {
+        font-size: 3.5rem;
+        
+    }
+    .cursos-header p {
+        font-size: 1.1rem;
+        max-width: 600px;
+        
+    }
+    .diferente p {
+        font-size: 1.1rem;
+        
+    }
+}
+
+/*  ********************************* * *  * * * * * * * * *  *********************************************** */
+/*  ********************************* * *  *    ABOUT    * *  *********************************************** */
+/*  ********************************* * *  * * * * * * * * *  *********************************************** */
+/* ABOUT ----------------------------------------- Banner */
+section.banner-about {
+    background-image: url("../img/meet01.jpg");
+    background-position: center;
+    background-size: cover;
+    padding-top: 150px;
+}  
+section.banner-about h1 {
+    background-color: var(--color-gray);
+    color: var(--color-white);
+    padding: 20px;
+    max-width: 90%;
+    border-radius: 0 30px 0 0;
+    font-size: 3rem;
+}
+/* ABOUT  ------------------------------------------- Formación medida */
+section.formacion-a-medida {
+    padding: 20px;
+}
+
+/* ABOUT  -------------------------------------------- poder formación */
+.poder-formacion {
+  background-color: var(--color-gray);
+  color: var(--color-light-gray);
+}
+.poder-flex-container > * {
+    flex: 0 1 50%;    
+}
+.poder-formacion .image-container > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.poder-formacion-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.poder-formacion-content {
+    padding: 20px;
+    max-width: 600px;
+}
+
+/* ABOUT ----------------------------------------------------- Por qué Elegirnos */
+
+section.elegirnos {
+    padding: 30px 20px;
+    background-color: var(--color-logo-sky);
+}
+section.elegirnos h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+section.elegirnos i {
+    font-size: 2.5rem;
+    color: var(--color-gray);
+}
+section.elegirnos header {
+    text-align: center;
+}
+.elegirnos-logo {
+    width: 100px;
+    -webkit-animation: fa-spin 15s infinite linear;
+    animation: fa-spin 15s infinite linear;
+    opacity: .5;
+}
+.elegirnos-logo:hover {
+    -webkit-animation: fa-spin 5s infinite linear;
+    animation: fa-spin 5s infinite linear;
+}
+
+.tarjeta-elegirnos {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+.tarjeta-elegirnos:nth-last-of-type(odd){
+    flex-direction: row-reverse;
+    text-align: right;
+}
+.tarjeta-elegirnos-content {
+    border: 1px solid black;
+    padding: 15px;
+    border-radius: 30px;
+}
+.tarjeta-elegirnos-content h3 {
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+}
+
+
+/* ABOUT --------------------------------query */
+@media (min-width: 980px) {
+    section.banner-about {
+        padding-top: 200px;
+    }  
+    section.banner-about h1 {       
+        padding: 40px;
+        max-width: initial;        
+        font-size: 4rem;
+        border-radius: 0 60px 0 0;
+    }  
+
+    /* ABOUT -- QUERY ---------------------Formación a medida */
+    section.formacion-a-medida {
+        padding: 60px;
+    }
+    section.formacion-a-medida h2 {
+        font-size: 3rem;
+        max-width: 80%;
+    }
+
+
+    /* ABOUT -- QUERY ---------------------formación */
+
+    .poder-flex-container {
+        display: flex;   
+    }  
+   
+    
+    .poder-formacion-content h2 {
+        font-size: 3rem;
+        margin-bottom: 30px;
+    }
+    
+    .poder-formacion-content {
+        padding: 50px;
+        max-width: 600px;
+    }
+
+    /* ABOUT -- QUERY --------------------- Por qué Elegirnos */
+
+    section.elegirnos {
+        padding: 40px;
+        background-color: var(--color-logo-sky);
+    }
+
+    .elegirnos-flex-container {
+        display: flex;
+        gap: 50px;
+    }
+    .elegirnos-flex-container > * {
+        flex: 1 1 50%;
+    }   
+    section.elegirnos h2 {
+        font-size: 3rem;
+        margin-bottom: 60px;
+        text-align: left;        
+    }    
+    .elegirnos-logo {
+        width: 300px;        
+    }
+    .elegirnos-logo:hover {
+        -webkit-animation: fa-spin 5s infinite linear;
+        animation: fa-spin 5s infinite linear;
+    }
+    .tarjeta-elegirnos {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        margin-bottom: 20px;
+    }
+    .tarjeta-elegirnos:nth-last-of-type(odd){
+        flex-direction: row-reverse;
+        text-align: right;
+    }
+    .tarjeta-elegirnos-content {
+        border: 1px solid black;
+        padding: 15px;
+        border-radius: 30px;
+    }
+    .tarjeta-elegirnos-content h3 {
+        margin-bottom: 10px;
+        font-size: 1.5rem;
+    }
+}
+/*  ********************************* * *  * * * * * * * * *  *********************************************** */
+/*  ********************************* * *  *   A MEDIDA  * *  *********************************************** */
+/*  ********************************* * *  * * * * * * * * *  *********************************************** */
+
+section.amedida {
+    padding: 30px 20px;
+    background-color: var(--color-white);
+}
+
+section.amedida h1 {
+    font-size: 3rem;
+    line-height: 2.5rem;
+    margin-bottom: 30px;
+}
+
+/* A MEDIDA -----------------------------------------   Configurar curso */
+
+section.configurar-curso h2 {
+    background-color: var(--color-dark-gray);
+    color: var(--color-light-gray);
+    padding: 20px;
+    font-size: 2.5rem;
+   
+}
+.left-column-configurar-curso img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin-bottom: -4px;
+}
+.right-column-configurar-curso {
+    padding: 20px;
+    background-color: var(--color-green);
+}
+.configurar-curso-content > p {
+    margin-bottom: 30px;
+}
+
+.right-column-configurar-curso a {
+    color: var(--color-logo-navy);
+    font-weight: 700;
+}
+.tarjeta-configurar-curso {
+    margin-bottom: 30px;
+}
+.tarjeta-configurar-curso h3{
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+}
+.tarjeta-configurar-curso i{
+    font-size: 1.1rem;
+    color: var(--color-gray);
+}
+
+/* A MEDIDA --------------------------------------  Formulario contact-amedida*/
+section.contact.contact-amedida {
+    background-image: initial;
+
+}
+/* A MEDIDA --------------------------------------  QUERY*/
+@media (min-width: 980px) {
+    /* A medida*/
+    section.amedida {
+        padding: 60px;
+    }
+
+    section.amedida h1 {
+        font-size: 4rem;
+        line-height: 4rem;
+        
+    }
+    /* A MEDIDA --------------------------------------  QUERY Configurar curso */
+    .flex-configurar-curso {
+        display: flex;
+        overflow: hidden;
+    }
+    .flex-configurar-curso > * {
+        flex: 1 1 50%;
+    }
+
+    section.configurar-curso h2 {
+        text-align: right;
+        padding: 50px;
+        font-size: 4rem;
+        /* margin: 0 0 0; */
+    }
+    .configurar-curso-content {
+        max-width: 600px;
+    }
+    .right-column-configurar-curso {
+        padding: 60px 50px;        
+    }
+    .configurar-curso-content > p {
+        margin-bottom: 50px;
+    }   
+    .tarjeta-configurar-curso h3{
+        font-size: 2rem;
+        margin-bottom: 5px;
+    }
+    .tarjeta-configurar-curso i{
+        font-size: 1.5rem;       
+    }
+    
+   
+}
+
+/*  ********************************* * *  * * * * * * * * *  *********************************************** */
+/*  ********************************* * *  *    CURSOS   * *  *********************************************** */
+/*  ********************************* * *  * * * * * * * * *  *********************************************** */
+
+section.catalogo {
+    padding: 30px 20px;
+    background-color: var(--color-white);
+}
+section.catalogo h1 {
+    font-size: 3rem;
+    line-height: 2.5rem;
+    margin-bottom: 30px;
+}
+.tarjeta-catalogo {
+    padding: 20px;
+}
+.tarjeta-catalogo h2 {
+    margin-bottom: 10px;
+}
+.tarjeta-catalogo ul {
+    padding-left: 30px;
+    
+}
+.tarjeta-catalogo li {
+    list-style-image: url(../icon/star-cyan-list.png);
+    margin-bottom: 10px;;
+
+}
+.tarjeta-catalogo img {
+   
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 30px;
+    box-shadow: 5px 5px 5px grey;
+}
+
+@media (min-width: 720px) { 
+    section.catalogo {
+        padding: 60px;
+       
+    }
+    section.catalogo h1 {
+        font-size: 4rem;
+        line-height: 4rem;
+        
+    }
+
+    .tarjeta-catalogo {
+        display: flex;
+        gap: 2rem;
+    }
+    .tarjeta-catalogo:nth-last-of-type(odd){
+        flex-direction: row-reverse;
+    }
+    .tarjeta-catalogo > * {
+        flex: 0 0 50%;
+        overflow: hidden;
+    }
+
+    .tarjeta-catalogo img {
+        
+        height: 250px;
+        object-fit: cover;
+        object-position: center;
+    }
+
+}
+
+/*  ********************************* * *  * * * * * * * * *  *********************************************** */
+/*  ********************************* * *  *BONIFICACIÓN * *  *********************************************** */
+/*  ********************************* * *  * * * * * * * * *  *********************************************** */
+/* Bonificacion */
+section.bonificacion {
+    padding: 30px 20px;
+    background-color: var(--color-white);
+}
+
+section.bonificacion h1 {
+    font-size: 3rem;
+    line-height: 3rem;
+    margin-bottom: 30px;
+}
+
+.tarjeta-beneficios figure img {
+    display: none;
+}
+.banner-bonificaciones {
+    padding: 80px 20px;
+    color: var(--color-white);
+    background-image: url(../icon/top.png),url(../icon/bottom.png),linear-gradient(#0008,#0008),url(../img/office1.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% , 100%, cover, cover;
+    background-position: top , bottom, center, center;
+}
+.banner-bonificaciones h3 {
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.agora {
+    background-color: white;
+    padding: 30px 20px;
+}
+.agora h2 {
+    font-size: 1.8rem;
+    line-height: 1.8rem;
+    margin-bottom: 1rem;
+}
+.agora img {
+    height: 30px;
+    
+}
+@media (min-width: 720px) { 
+    section.bonificacion {
+        padding: 60px;
+       
+    }
+    section.bonificacion h1 {
+        font-size: 4rem;
+        line-height: 4rem;
+        
+    }
+
+    .tarjeta-beneficios {
+        display: flex;
+        gap: 2rem;
+        margin: 2rem 0;
+
+        
+    }
+    .tarjeta-beneficios:last-of-type {
+        margin-bottom: 0;
+    }
+    .tarjeta-beneficios:nth-last-of-type(odd){
+        flex-direction: row-reverse;
+    }
+    .tarjeta-beneficios > * {
+        flex: 1 1 50%;
+        /* background-color: red; */
+        overflow: hidden;
+    }
+    
+    .tarjeta-beneficios figure img {
+        display: inline;
+        height: 250px;
+        width: 100%;
+        object-fit: cover;
+        border-radius: 30px;
+    }
+
+    .contenido-beneficios h2 {
+        margin-bottom: 10px;
+    }
+
+
+    .banner-bonificaciones {
+        padding: 200px;
+    }
+    .banner-bonificaciones h3 {
+        font-size: 2rem;
+        
+    }
+    .agora {
+        background-color: white;
+        padding: 60;
+    }
+    .agora h2 {
+        font-size: 3rem;
+        line-height: 3rem;
+        margin-bottom: 1rem;
+    }
+    .agora img {
+        height: 50px;
+        
+}
+
+
+
+
+/* FOOTER */
+
+  
+.footer {
+    background-color: #000;
+    color: #cdd0d1;
+    padding: 30px;
+}
+.footer a {
+  color: var(--color-light-gray);
+  text-decoration: none;
+}
+.footer a:hover {
+  color: var(--color-white);
+  text-decoration: none;
+}
+.footer p {
+  margin-bottom: 10px;;
+}
+.footer .logo-blanco {
+  width: 180px;
+  margin-bottom: 20px;
+}
+
+.footer-title {
+  margin-bottom: 30px;
+}
+
+.footer-contact {
+  padding: 20px 0;
+}
+
+.footer-column {
+  padding: 20px 0;
+}
+
+.footer-column:not(:first-of-type) {  
+  border-top: 1px solid var(--color-dark-gray);
+}
+.social a {
+  margin-right: 20px;
+  font-size: 1.2rem;
+}
+
+@media (min-width: 980px) {
+  .footer-container {
+    display: flex;
+    gap: 50px;
+    justify-content: space-between;
+  }
+  .footer-column {
+    flex: 1 1 300px;
+    border-top: initial;
+  }
+  .footer-column:not(:first-of-type) {  
+    border-top: 0;
+  }
+  .footer-title {
+    font-size: 1.5rem;
+  }
 }
