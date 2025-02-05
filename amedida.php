@@ -1,59 +1,4 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Polaris </title>
-    <link rel="icon" href="./icon/star-cyan.png" type="image/x-icon">
-
-    <!-- FontAwesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="./css/style.css"> 
-   
-     
-
-
-   
-
-    <!-- Including jQuery -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>   
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
-<!-- Custom JavaScript -->
-    <script src="./js/languages.js"></script>
-    <script src="./js/editor.js"></script>    
-    <style>
-        
-    </style>
-</head>
-<body>
-<header class="main-header"> 
-    <a class="logo" href="./index.html"><img src="./icon/logo.png" alt="Logotipo Polaris"></a>
-    <i class="menu-toggle fas fa-bars"></i>  
-    <nav class="nav-ul nav-desktop">
-        <ul class="nav-links">            
-            <li><a href="./about.html">Sobre nosotros</a></li>
-            <li><a href="./amedida.html">Formación a medida</a></li>
-            <li><a href="./cursos.html">Cursos</a></li>
-            <li><a href="./bonificacion.html">Bonicación</a></li>
-            <li><a href="./contact.html">Contacto</a></li>            
-        </ul>
-    </nav>    
-</header>
-<nav class="nav-ul nav-mobile">
-    <ul class="nav-links">            
-        <li><a href="./about.html">Sobre nosotros</a></li>
-        <li><a href="./amedida.html">Formación a medida</a></li>
-        <li><a href="./cursos.html">Cursos</a></li>
-        <li><a href="./bonificacion.html">Bonicación</a></li>     
-        <li><a href="./contact.html">Contacto</a></li>       
-    </ul>
-</nav>
-
-<script src="./js/menu.js"></script>
+<?php include './header.php' ?>
 <main>
    <section class="amedida">
         <div class="section-container">
@@ -74,14 +19,14 @@
                 </div>
                 <div class="right-column-configurar-curso">
                     <div class="configurar-curso-content">
-                        <p>En Polaris, queremos que configurar el curso ideal para tu organización sea un proceso sencillo y accesible. Por eso, te ofrecemos <b>múltiples formas de contactarnos</b> para empezar:</p>
+                        <p>En Polaris, queremos que configurar el curso ideal para tu organización sea un proceso sencillo y accesible. Por eso, te ofrecemos <b>múltiples formas de contactarnos</b> para empezar, elige la opción que te sea más cómoda:</p>
                         <div class="tarjeta-configurar-curso">
                             <h3><i class="fas fa-phone"></i> Llámanos por teléfono</h3>
-                            <p>Habla con nosotros para analizar tus necesidades formativas. Llámanos al <a href="tel:+34602256136">602 256 136</a> y estaremos encantados de ayudarte.</p>
+                            <p>Habla con nosotros para analizar tus necesidades formativas. Llámanos al <a href="tel:+34638900366" ><i class="fas fa-phone"></i> 638 900 366</a> o envíanos un <a href="https://wa.me/34638900366" target="_blank"><i class="fab fa-whatsapp"></i> Whatsapp</a> y estaremos encantados de ayudarte.</p>
                         </div>
                         <div class="tarjeta-configurar-curso">
                             <h3><i class="fas fa-envelope"></i> Escríbenos un email</h3>
-                            <p>Si lo prefieres prefieres, mándanos un email a <a href="mailto:hola@polarisdata.es">hola@polarisdata.es</a> describiendo brevemente tus necesidades, y nos pondremos en contacto contigo rápidamente.</p>
+                            <p>Si lo prefieres prefieres, mándanos un email a <a href="mailto:info@polarisdata.es">info@polarisdata.es</a> describiendo brevemente tus necesidades, y nos pondremos en contacto contigo rápidamente.</p>
                         </div>
                         <div class="tarjeta-configurar-curso">
                             <h3><i class="fas fa-edit"></i> Rellena el formulario</h3>
@@ -163,60 +108,4 @@
         
    </section>
 </main>
-<footer class="footer">
-    <div class="section-container footer-container">
-      <div class="footer-column">
-        <img src="./icon/polaris_logo_blanco.png" alt="Logotipo Polaris de color blanco" class="logo-blanco">
-        <h4 class="footer-title">Universidad Divi</h4>
-        <p class="footer-text">Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet.</p>
-        <div class="footer-contact">
-          <p>1234 Divi St. #1000, San Francisco, CA 94220</p>
-          <p><a href="mailto:hello@divionlineuniversity.com">hello@divionlineuniversity.com</a></p>
-          <p><a href="tel:+12553526258">(255) 352-6258</a></p>
-        </div>
-        <div class="social">
-          <a href="https://www.facebook.com" target="_blank" class="fab fa-facebook-f">
-              
-          </a>
-          <a href="https://x.com" target="_blank" class="fab fa-x">
-              
-          </a>
-          <a href="https://www.instagram.com" target="_blank" class="fab fa-instagram">
-              
-          </a>
-        </div>
-      </div>
-  
-      <div class="footer-column">
-          <h4 class="footer-title">Explore</h4>
-          <p><a href="#">Estudia con nosotros</a></p>
-          <p><a href="#">Aprendizaje a distancia soportado</a></p>
-          <p><a href="#">Financiación de tus estudios</a></p>
-          <p><a href="#">Reputación global</a></p>
-          <p><a href="#">Aprendizajes</a></p>
-          <p><a href="#">Noticias y medios</a></p>
-        
-          
-          <p><a href="#">Estudiante / Tutor</a></p>
-          <p><a href="#">Personal</a></p>
-          <p><a href="#">Sistema de entrada de calificaciones en línea</a></p>
-          <p><a href="#">Carreras</a></p>
-      </div>
-  
-      <div class="footer-column">
-          <h4 class="footer-title">Admission</h4>
-          <p class="footer-section-title">Admisión local</p>
-          <p><a href="#">Admisión local</a></p>
-          <p><a href="#">Admisión internacional</a></p>
-          <p><a href="#">Detalles de admisión</a></p>
-          <p class="footer-section-title">Declaración de accesibilidad</p>
-          <p><a href="#">Declaración de accesibilidad</a></p>
-          <p><a href="#">Condiciones de uso</a></p>
-          <p><a href="#">Política de privacidad</a></p>
-          <p><a href="#">Política de cookies</a></p>
-          <p><a href="#">Derechos de autor</a></p>
-      </div>
-    </div>  
-  </footer>    
-</body>
-
+<?php include './footer.php' ?>
